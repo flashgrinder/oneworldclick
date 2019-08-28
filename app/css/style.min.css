@@ -697,6 +697,18 @@ button.swiper-pagination-bullet {
   -ms-perspective: 1200px;
 }
 
+.btn-gold {
+  color: #f6f6f6;
+  font-size: 12px;
+  background: #CF9E41;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 30px;
+  font-weight: 300;
+  border-radius: 100px;
+  width: 200px;
+}
+
 .sliders {
   display: -webkit-box;
   display: -webkit-flex;
@@ -704,6 +716,7 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   justify-content: space-between;
+  font-family: "GothamPro", serif;
 }
 
 .sliders .swiper-container {
@@ -713,10 +726,12 @@ button.swiper-pagination-bullet {
 
 .sliders .swiper-container:hover .swiper-menu {
   right: 0;
+  -webkit-transition: right .5s;
+  transition: right .5s;
 }
 
 .sliders .swiper-wrapper {
-  height: 455px;
+  min-height: 500px;
 }
 
 .sliders .swiper-slide {
@@ -729,12 +744,12 @@ button.swiper-pagination-bullet {
 }
 
 .sliders .swiper-slide.usa-2 {
-  background: url(../img/sliders/usa/slide-1.jpg) center center no-repeat;
+  background: url(../img/sliders/usa/slide-2.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .sliders .swiper-slide.usa-3 {
-  background: url(../img/sliders/usa/slide-1.jpg) center center no-repeat;
+  background: url(../img/sliders/usa/slide-3.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -744,12 +759,12 @@ button.swiper-pagination-bullet {
 }
 
 .sliders .swiper-slide.eu-2 {
-  background: url(../img/sliders/eu/slide-1.jpg) center center no-repeat;
+  background: url(../img/sliders/eu/slide-2.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .sliders .swiper-slide.eu-3 {
-  background: url(../img/sliders/eu/slide-1.jpg) center center no-repeat;
+  background: url(../img/sliders/eu/slide-3.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -759,41 +774,92 @@ button.swiper-pagination-bullet {
 }
 
 .sliders .swiper-slide.caribs-2 {
-  background: url(../img/sliders/caribs/slide-1.jpg) center center no-repeat;
+  background: url(../img/sliders/caribs/slide-2.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .sliders .swiper-slide.caribs-3 {
-  background: url(../img/sliders/caribs/slide-1.jpg) center center no-repeat;
+  background: url(../img/sliders/caribs/slide-3.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .sliders .swiper-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 245px;
+  height: 270px;
   width: 60%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
+  text-align: left;
+  padding: 22px 36px 55px 19px;
 }
 
 .sliders .swiper-btn .heading {
   color: #f6f6f6;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 34px;
+  font-weight: bold;
 }
 
 .sliders .swiper-btn .title {
+  font-family: "GothamPro", serif;
   color: #f6f6f6;
+  font-size: 20px;
+  line-height: 19px;
+  font-weight: 300;
+  margin: 19px 0 19px 0;
 }
 
 .sliders .swiper-menu {
   position: absolute;
   right: -100vw;
   top: 0;
-  height: 455px;
+  min-height: 500px;
   width: 40%;
   background: rgba(0, 0, 0, 0.75);
   z-index: 2;
+  font-weight: 300;
+  -webkit-transition: right 1s;
+  transition: right 1s;
+}
+
+.sliders .swiper-menu ul li a {
+  display: block;
+  color: #f6f6f6;
+  font-size: 12px;
+  padding: 10px 15px 10px 12px;
+  background: #000000;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.sliders .swiper-menu .menu-down li a {
+  display: block;
+  background: transparent;
+  text-align: left;
+  font-size: 12px;
+  width: 100%;
+  padding: 10px 15px 10px 12px;
+  -webkit-transition: background .2s;
+  transition: background .2s;
+}
+
+.sliders .swiper-menu .menu-down li a:hover {
+  background: #CF9E41;
+  -webkit-transition: background .2s;
+  transition: background .2s;
 }
 
 * {
@@ -1001,18 +1067,18 @@ img {
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto/Roboto-Regular.eot");
-  src: url("../fonts/Roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: 'GothamPro';
+  src: url("../fonts/Gotham/GothamPro-Bold.eot");
+  src: url("../fonts/Gotham/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/GothamPro-Bold.woff2") format("woff2"), url("../fonts/Gotham/GothamPro-Bold.woff") format("woff"), url("../fonts/Gotham/GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("../fonts/Roboto/Roboto-Bold.eot");
-  src: url("../fonts/Roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
+  font-family: 'GothamPro';
+  src: url("../fonts/Gotham/GothamPro-Light.eot");
+  src: url("../fonts/Gotham/GothamPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gotham/GothamPro-Light.woff2") format("woff2"), url("../fonts/Gotham/GothamPro-Light.woff") format("woff"), url("../fonts/Gotham/GothamPro-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -1022,7 +1088,7 @@ html {
 
 body {
   background-color: #f6f6f6;
-  font-family: 'Roboto', sans-serif;
+  font-family: Tahoma,'Gotham Pro', sans-serif;
 }
 
 .wrapper {
