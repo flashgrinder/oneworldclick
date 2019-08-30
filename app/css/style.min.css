@@ -709,6 +709,12 @@ button.swiper-pagination-bullet {
   width: 200px;
 }
 
+.btn-gold__position {
+  position: absolute;
+  bottom: 55px;
+  left: 19px;
+}
+
 .sliders {
   display: -webkit-box;
   display: -webkit-flex;
@@ -791,8 +797,9 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   flex-direction: column;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   position: absolute;
   bottom: 0;
   left: 0;
