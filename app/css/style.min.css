@@ -1,3 +1,5 @@
+/* Swiper */
+
 /**
  * Swiper 4.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -697,6 +699,8 @@ button.swiper-pagination-bullet {
   -ms-perspective: 1200px;
 }
 
+/* Interface */
+
 .btn-gold {
   color: #f6f6f6;
   font-size: 12px;
@@ -715,7 +719,11 @@ button.swiper-pagination-bullet {
   left: 19px;
 }
 
-.sliders {
+/* Header */
+
+/* Slider */
+
+.headerSliders {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -725,71 +733,71 @@ button.swiper-pagination-bullet {
   font-family: "GothamPro", serif;
 }
 
-.sliders .swiper-container {
+.swiper-container {
   width: 100%;
   margin: 0;
 }
 
-.sliders .swiper-container:hover .swiper-menu {
+.swiper-container:hover .swiper-menu {
   right: 0;
   -webkit-transition: right .5s;
   transition: right .5s;
 }
 
-.sliders .swiper-wrapper {
+.swiper-wrapper {
   min-height: 500px;
 }
 
-.sliders .swiper-slide {
+.swiper-slide {
   width: 100%;
 }
 
-.sliders .swiper-slide.usa-1 {
+.swiper-slide.usa-1 {
   background: url(../img/sliders/usa/slide-1.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.sliders .swiper-slide.usa-2 {
+.swiper-slide.usa-2 {
   background: url(../img/sliders/usa/slide-2.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.sliders .swiper-slide.usa-3 {
+.swiper-slide.usa-3 {
   background: url(../img/sliders/usa/slide-3.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.sliders .swiper-slide.eu-1 {
+.swiper-slide.eu-1 {
   background: url(../img/sliders/eu/slide-1.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.sliders .swiper-slide.eu-2 {
+.swiper-slide.eu-2 {
   background: url(../img/sliders/eu/slide-2.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.sliders .swiper-slide.eu-3 {
+.swiper-slide.eu-3 {
   background: url(../img/sliders/eu/slide-3.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.sliders .swiper-slide.caribs-1 {
+.swiper-slide.caribs-1 {
   background: url(../img/sliders/caribs/slide-1.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.sliders .swiper-slide.caribs-2 {
+.swiper-slide.caribs-2 {
   background: url(../img/sliders/caribs/slide-2.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.sliders .swiper-slide.caribs-3 {
+.swiper-slide.caribs-3 {
   background: url(../img/sliders/caribs/slide-3.jpg) center center no-repeat;
   background-size: cover;
 }
 
-.sliders .swiper-btn {
+.swiper-btn {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -811,7 +819,7 @@ button.swiper-pagination-bullet {
   padding: 22px 36px 55px 19px;
 }
 
-.sliders .swiper-btn .heading {
+.swiper-btn .heading {
   color: #f6f6f6;
   font-size: 36px;
   text-transform: uppercase;
@@ -819,7 +827,7 @@ button.swiper-pagination-bullet {
   font-weight: bold;
 }
 
-.sliders .swiper-btn .title {
+.swiper-btn .title {
   font-family: "GothamPro", serif;
   color: #f6f6f6;
   font-size: 20px;
@@ -828,7 +836,7 @@ button.swiper-pagination-bullet {
   margin: 19px 0 19px 0;
 }
 
-.sliders .swiper-menu {
+.swiper-menu {
   position: absolute;
   right: -100vw;
   top: 0;
@@ -841,7 +849,7 @@ button.swiper-pagination-bullet {
   transition: right 1s;
 }
 
-.sliders .swiper-menu ul li a {
+.swiper-menu ul li a {
   display: block;
   color: #f6f6f6;
   font-size: 12px;
@@ -852,7 +860,7 @@ button.swiper-pagination-bullet {
   text-align: left;
 }
 
-.sliders .swiper-menu .menu-down li a {
+.swiper-menu .menu-down li a {
   display: block;
   background: transparent;
   text-align: left;
@@ -863,11 +871,13 @@ button.swiper-pagination-bullet {
   transition: background .2s;
 }
 
-.sliders .swiper-menu .menu-down li a:hover {
+.swiper-menu .menu-down li a:hover {
   background: #CF9E41;
   -webkit-transition: background .2s;
   transition: background .2s;
 }
+
+/* Normalize */
 
 * {
   box-sizing: border-box;
@@ -1073,6 +1083,8 @@ img {
   border-style: none;
 }
 
+/* Fonts */
+
 @font-face {
   font-family: 'GothamPro';
   src: url("../fonts/Gotham/GothamPro-Bold.eot");
@@ -1096,6 +1108,7 @@ html {
 body {
   background-color: #f6f6f6;
   font-family: Tahoma,'Gotham Pro', sans-serif;
+  font-size: 16px;
 }
 
 .wrapper {

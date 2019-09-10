@@ -1,102 +1,102 @@
-.sliders
+.headerSliders
 	display: flex
 	justify-content: space-between
 	font-family: $gotham
-	.swiper
-		&-container
-			width: 100%
-			margin: 0
-			&:hover .swiper-menu
-				right: 0
-				transition: right .5s
-		&-wrapper
-			min-height: 500px
-		&-slide
-			width: 100%
-			&.usa-1
-				background: url(../img/sliders/usa/slide-1.jpg) center center no-repeat
-				background-size: cover
-			&.usa-2
-				background: url(../img/sliders/usa/slide-2.jpg) center center no-repeat
-				background-size: cover
-			&.usa-3
-				background: url(../img/sliders/usa/slide-3.jpg) center center no-repeat
-				background-size: cover
-			&.eu-1
-				background: url(../img/sliders/eu/slide-1.jpg) center center no-repeat
-				background-size: cover
-			&.eu-2
-				background: url(../img/sliders/eu/slide-2.jpg) center center no-repeat
-				background-size: cover
-			&.eu-3
-				background: url(../img/sliders/eu/slide-3.jpg) center center no-repeat
-				background-size: cover
-			&.caribs-1
-				background: url(../img/sliders/caribs/slide-1.jpg) center center no-repeat
-				background-size: cover
-			&.caribs-2
-				background: url(../img/sliders/caribs/slide-2.jpg) center center no-repeat
-				background-size: cover
-			&.caribs-3
-				background: url(../img/sliders/caribs/slide-3.jpg) center center no-repeat
-				background-size: cover
-		&-btn
-			display: flex
-			flex-direction: column
-			justify-content: flex-start
-			position: absolute
-			bottom: 0
-			left: 0
-			height: 270px
-			width: 60%
-			background: rgba(0, 0, 0, 0.5)
-			z-index: 2
-			text-align: left
-			padding: 22px 36px 55px 19px
-			.heading
-				color: $white
-				font-size: $big-font-size
-				text-transform: uppercase
-				line-height: 34px
-				font-weight: bold
-			.title
-				font-family: $gotham
-				color: $white
-				font-size: $medium-font-size
-				line-height: 19px
-				font-weight: 300
-				margin: 19px 0 19px 0
-		&-menu
-			position: absolute
-			right: -100vw
-			top: 0
-			min-height: 500px
-			width: 40%
-			background: rgba(0, 0, 0, 0.75)
-			z-index: 2
+.swiper
+	&-container
+		width: 100%
+		margin: 0
+		&:hover .swiper-menu
+			right: 0
+			transition: right .5s
+	&-wrapper
+		min-height: 500px
+	&-slide
+		width: 100%
+		&.usa-1
+			background: url(../img/sliders/usa/slide-1.jpg) center center no-repeat
+			background-size: cover
+		&.usa-2
+			background: url(../img/sliders/usa/slide-2.jpg) center center no-repeat
+			background-size: cover
+		&.usa-3
+			background: url(../img/sliders/usa/slide-3.jpg) center center no-repeat
+			background-size: cover
+		&.eu-1
+			background: url(../img/sliders/eu/slide-1.jpg) center center no-repeat
+			background-size: cover
+		&.eu-2
+			background: url(../img/sliders/eu/slide-2.jpg) center center no-repeat
+			background-size: cover
+		&.eu-3
+			background: url(../img/sliders/eu/slide-3.jpg) center center no-repeat
+			background-size: cover
+		&.caribs-1
+			background: url(../img/sliders/caribs/slide-1.jpg) center center no-repeat
+			background-size: cover
+		&.caribs-2
+			background: url(../img/sliders/caribs/slide-2.jpg) center center no-repeat
+			background-size: cover
+		&.caribs-3
+			background: url(../img/sliders/caribs/slide-3.jpg) center center no-repeat
+			background-size: cover
+	&-btn
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		position: absolute
+		bottom: 0
+		left: 0
+		height: 270px
+		width: 60%
+		background: rgba(0, 0, 0, 0.5)
+		z-index: 2
+		text-align: left
+		padding: 22px 36px 55px 19px
+		.heading
+			color: $white
+			font-size: $big-font-size
+			text-transform: uppercase
+			line-height: 34px
+			font-weight: bold
+		.title
+			font-family: $gotham
+			color: $white
+			font-size: $medium-font-size
+			line-height: 19px
 			font-weight: 300
-			transition: right 1s
-			ul
-				li
-					a
-						display: block
-						color: $white
-						font-size: $tiny-font-size
-						padding: 10px 15px 10px 12px
-						background: $black
-						width: 100%
-						text-transform: uppercase
-						text-align: left
-			.menu-down
-				li
-					a
-						display: block
-						background: transparent
-						text-align: left
-						font-size: $tiny-font-size
-						width: 100%
-						padding: 10px 15px 10px 12px
+			margin: 19px 0 19px 0
+	&-menu
+		position: absolute
+		right: -100vw
+		top: 0
+		min-height: 500px
+		width: 40%
+		background: rgba(0, 0, 0, 0.75)
+		z-index: 2
+		font-weight: 300
+		transition: right 1s
+		ul
+			li
+				a
+					display: block
+					color: $white
+					font-size: $tiny-font-size
+					padding: 10px 15px 10px 12px
+					background: $black
+					width: 100%
+					text-transform: uppercase
+					text-align: left
+		.menu-down
+			li
+				a
+					display: block
+					background: transparent
+					text-align: left
+					font-size: $tiny-font-size
+					width: 100%
+					padding: 10px 15px 10px 12px
+					transition: background .2s
+					&:hover
+						background: $gold
 						transition: background .2s
-						&:hover
-							background: $gold
-							transition: background .2s
