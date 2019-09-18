@@ -1,21 +1,29 @@
 // Navigation
-.headerMenu
-	.headerMenu__logo
-		img(src="", alt="alt")
-	nav.headerMenu__navigation
-		ul
-			li
-				a(href="") О нас
-			li
-				a(href="") Услуги
-			li
-				a(href="") Всё об эмиграции из россии
-			li
-				a(href="") Контакты
-	adress.headerMenu__adr
-		.headerMenu__adr-list
-			span.adr-list__position Москва, Новинский б. 20а, стр. 3-6, оф. 212
-			span.adr-list__email info@oneworldclick.ru
-		.headerMenu__adr-phone
-			span.adr-phone__one +7 (906) 311-25-44
-			span.adr-phone__two +7 (499) 450-60-20
+.headerContainer
+	.headerTop
+		a(href="#").headerTop__logo
+			img(src="img/owclogo.png", alt="alt")
+		.headerTop__btn
+			a(href="#").btn-gold Заказать услугу
+			.headerTop__social
+				a(href="#").btn-social
+					img(src="img/icons/instagram.png", alt="alt")
+				a(href="#").btn-social
+					img(src="img/icons/facebook.png", alt="alt")
+				a(href="#").btn-social
+					img(src="img/icons/youtube.png", alt="alt")
+			a(href="#").btn-gold.btn-gold__big Заказать консультацию
+	.headerMenu
+		nav.headerMenu__navigation
+			ul
+				li
+					a(href="#") О нас
+				li
+					a(href="#") Услуги
+				li
+					a(href="#") Программы
+				li
+					a(href="#") Контакты
+		adress.headerMenu__phone
+				span.headerMenu__phone-one +7 (906) 311-25-44
+				span.headerMenu__phone-two +7 (499) 450-60-20
