@@ -1,7 +1,10 @@
 /* Общие стили кнопок */
 .btn-gold
+	display: inline-block
 	font-family: $tahoma
 	font-weight: normal
+	font-size: 18px
+	line-height: 6px
 	color: $white
 	background: $gold
 	text-align: center
@@ -15,22 +18,26 @@
 		color: $gold
 		background: $white
 		transition: ease .3s
-	/* Кнопки в шапке */
 	&_head
+		/* Кнопки в шапке */
 		font-family: $gotham
+		font-size: 14px
 		font-weight: 700
-		font-size: 18px
 		text-transform: uppercase
-		line-height: 12px
-	/* Основные кнопки */
-	&_main
-		font-size: 18px
-		line-height: 6px
-	/* Позиция кнопок в слайдере */
+		line-height: 8px
+	&_clear
+		/* Прозрачные кнопки */
+		color: $gold
+		background: transparent
+		&:hover
+			color: $white
+			background: $gold
 	&_position
+		/* Местоположение кнопки в слайдере */
 		position: absolute
 		bottom: 55px
 		left: 19px
+/* Социальные кнопки */
 .btn-social
 	img
 		width: 30px

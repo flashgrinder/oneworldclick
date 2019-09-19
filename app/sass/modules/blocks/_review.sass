@@ -1,0 +1,39 @@
+.review
+	background: rgba(0, 0, 0, 0.1)
+	padding-bottom: 30px
+.reviewHead
+	display: flex
+	&__wrapp
+		flex-basis: 53.3%
+		display: flex
+		justify-content: flex-end
+		background: $gold
+		padding: 20px 0 20px 0
+	&__title
+		font-family: $gotham
+		font-weight: 700
+		font-size: $title-font-size
+		line-height: 30px
+		text-transform: uppercase
+		color: $white
+		width: 45%
+.reviewVideo
+	+row-flex()
+	align-items: flex-start
+	justify-content: center
+	margin-top: 30px
+	margin-bottom: 30px
+	&__container
+		+size(3)
+		margin: 0 16px
+		iframe
+			width: 100%
+	&__title
+		font-family: $tahoma
+		font-weight: normal
+		font-size: $normal-font-size
+		line-height: 22px
+		padding-top: 10px
+.reviewBtn
+	margin-top: 40px
+	text-align: center
