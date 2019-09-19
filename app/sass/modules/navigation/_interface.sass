@@ -1,27 +1,36 @@
+/* Общие стили кнопок */
 .btn-gold
 	font-family: $tahoma
-	color: $white
-	font-size: $tiny-font-size
 	font-weight: normal
+	color: $white
 	background: $gold
 	text-align: center
-	text-transform: uppercase
 	padding: 14px 30px
 	font-weight: 300
 	border-radius: 100px
-	width: 200px
+	height: 40px
 	border: 2px solid $gold
 	transition: ease .3s
 	&:hover
 		color: $gold
 		background: $white
 		transition: ease .3s
-	&__position
+	/* Кнопки в шапке */
+	&_head
+		font-family: $gotham
+		font-weight: 700
+		font-size: 18px
+		text-transform: uppercase
+		line-height: 12px
+	/* Основные кнопки */
+	&_main
+		font-size: 18px
+		line-height: 6px
+	/* Позиция кнопок в слайдере */
+	&_position
 		position: absolute
 		bottom: 55px
 		left: 19px
-	&__big
-		width: 260px
 .btn-social
 	img
 		width: 30px

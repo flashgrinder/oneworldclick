@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Swiper */
 
 /**
@@ -701,21 +703,24 @@ button.swiper-pagination-bullet {
 
 /* Interface */
 
+/* Общие стили кнопок */
+
 .btn-gold {
   font-family: Tahoma, sans-serif;
-  color: #f6f6f6;
-  font-size: 12px;
   font-weight: normal;
+  color: #f6f6f6;
   background: #CF9E41;
   text-align: center;
-  text-transform: uppercase;
   padding: 14px 30px;
   font-weight: 300;
   border-radius: 100px;
-  width: 200px;
+  height: 40px;
   border: 2px solid #CF9E41;
   -webkit-transition: ease .3s;
   transition: ease .3s;
+  /* Кнопки в шапке */
+  /* Основные кнопки */
+  /* Позиция кнопок в слайдере */
 }
 
 .btn-gold:hover {
@@ -725,14 +730,23 @@ button.swiper-pagination-bullet {
   transition: ease .3s;
 }
 
-.btn-gold__position {
+.btn-gold_head {
+  font-family: "GothamPro", serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 12px;
+}
+
+.btn-gold_main {
+  font-size: 18px;
+  line-height: 6px;
+}
+
+.btn-gold_position {
   position: absolute;
   bottom: 55px;
   left: 19px;
-}
-
-.btn-gold__big {
-  width: 260px;
 }
 
 .btn-social img {
@@ -1004,6 +1018,182 @@ button.swiper-pagination-bullet {
   background: #CF9E41;
   -webkit-transition: background .2s;
   transition: background .2s;
+}
+
+/* Relocation Block */
+
+.relocation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background: url(../img/bg/bgtrip.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.relocationContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-basis: 46.7%;
+  flex-basis: 46.7%;
+}
+
+.relocationContainer__title {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 20px 30px;
+}
+
+.relocationContainer__title h2 {
+  font-family: "GothamPro", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  width: 40%;
+}
+
+.relocationContainer__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.relocationContainer__btn .btn-gold {
+  margin: 30px 0 0 30px;
+}
+
+.relocationContainer__btn .btn-gold:last-of-type {
+  margin-bottom: 30px;
+}
+
+.relocationContainer__text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 20px 30px;
+}
+
+.relocationContainer__heading {
+  font-family: "GothamPro", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+}
+
+.relocationContainer__descr {
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  color: #f6f6f6;
+  width: 60%;
+}
+
+/* Review Block */
+
+.relocation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background: url(../img/bg/bgtrip.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.relocationContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-basis: 46.7%;
+  flex-basis: 46.7%;
+}
+
+.relocationContainer__title {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 20px 30px;
+}
+
+.relocationContainer__title h2 {
+  font-family: "GothamPro", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  width: 40%;
+}
+
+.relocationContainer__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+}
+
+.relocationContainer__btn .btn-gold {
+  margin: 30px 0 0 30px;
+}
+
+.relocationContainer__btn .btn-gold:last-of-type {
+  margin-bottom: 30px;
+}
+
+.relocationContainer__text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 20px 30px;
+}
+
+.relocationContainer__heading {
+  font-family: "GothamPro", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+}
+
+.relocationContainer__descr {
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  color: #f6f6f6;
+  width: 60%;
 }
 
 /* Normalize */
