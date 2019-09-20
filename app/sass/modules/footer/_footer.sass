@@ -1,0 +1,34 @@
+.footer
+	background: $black
+.footerContainer
+	+row-flex()
+	justify-content: center
+	align-items: flex-start
+	padding-top: 30px
+	padding-bottom: 30px
+	font-family: $tahoma
+	font-weight: normal
+	font-size: $small-font-size
+	color: $white
+.footerColumn
+	+col()
+	+size(3)
+	&__title
+		font-size: $small-font-size
+		text-transform: uppercase
+		text-decoration: underline
+	&__heading
+		font-size: $small-font-size
+		text-transform: uppercase
+		font-weight: normal
+		padding-top: 10px
+	a
+		display: block
+		color: $white
+		padding-top: 10px
+		transition: ease .3s
+		&:hover
+			color: $gold
+			transition: ease .3s
+	&__down
+		margin-top: 50px
