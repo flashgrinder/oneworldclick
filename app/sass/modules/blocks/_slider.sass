@@ -2,6 +2,7 @@
 	display: flex
 	justify-content: space-between
 	font-family: $gotham
+	+lg(flex-direction, column)
 .swiper
 	&-container
 		width: 100%
@@ -9,37 +10,16 @@
 		&:hover .swiper-menu
 			right: 0
 			transition: right .5s
+			+lg(right, -100vw)
 	&-wrapper
 		min-height: 500px
 	&-slide
 		width: 100%
-		&.usa-1
-			background: url(../img/sliders/usa/slide-1.jpg) center center no-repeat
-			background-size: cover
-		&.usa-2
-			background: url(../img/sliders/usa/slide-2.jpg) center center no-repeat
-			background-size: cover
-		&.usa-3
-			background: url(../img/sliders/usa/slide-3.jpg) center center no-repeat
-			background-size: cover
-		&.eu-1
-			background: url(../img/sliders/eu/slide-1.jpg) center center no-repeat
-			background-size: cover
-		&.eu-2
-			background: url(../img/sliders/eu/slide-2.jpg) center center no-repeat
-			background-size: cover
-		&.eu-3
-			background: url(../img/sliders/eu/slide-3.jpg) center center no-repeat
-			background-size: cover
-		&.caribs-1
-			background: url(../img/sliders/caribs/slide-1.jpg) center center no-repeat
-			background-size: cover
-		&.caribs-2
-			background: url(../img/sliders/caribs/slide-2.jpg) center center no-repeat
-			background-size: cover
-		&.caribs-3
-			background: url(../img/sliders/caribs/slide-3.jpg) center center no-repeat
-			background-size: cover
+		height: 500px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
 	&-btn
 		display: flex
 		flex-direction: column
@@ -53,6 +33,12 @@
 		z-index: 2
 		text-align: left
 		padding: 22px 36px 55px 19px
+		+xl-block
+			width: 70%
+			padding: 15px 25px 25px 10px
+		+lg-block
+			width: 100%
+			text-align: center
 		.heading
 			color: $white
 			font-size: $big-font-size
@@ -70,12 +56,13 @@
 		position: absolute
 		right: -100vw
 		top: 0
-		min-height: 500px
+		height: 100%
 		width: 40%
 		background: rgba(0, 0, 0, 0.75)
 		z-index: 2
 		font-weight: 300
 		transition: right 1s
+		+xl(width, 50%)
 		ul
 			li
 				a

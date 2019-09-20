@@ -24,7 +24,7 @@ module.exports = {
 			width: "400px",
 			offset: "10px",
 			fields: "5px"
-	}
+		}
 	},
 	mobileFirst: false
 };

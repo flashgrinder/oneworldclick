@@ -9,6 +9,11 @@
 		justify-content: flex-end
 		background: $gold
 		padding: 20px 30px 20px 30px
+		+xl(flex-basis, 56.4%)
+		+lg-block
+			flex-basis: 100%
+			padding: 20px 10px 20px 10px
+			justify-content: center
 	&__title
 		font-family: $gotham
 		font-weight: 700
@@ -16,6 +21,8 @@
 		line-height: 30px
 		text-transform: uppercase
 		color: $white
+		+lg(text-align, center)
+		+sm(font-size, 24px)
 .programmVideo
 	+row-flex()
 	align-items: flex-start
@@ -23,6 +30,11 @@
 	margin-bottom: 30px
 	&__container
 		+size(3)
+		+size-xl(3.5)
+		+size-lg(5)
+		+size-md(12)
+		+size-sm(12)
+		+size-xs(12)
 		margin: 50px 16px 0 16px
 		img
 			width: 100%

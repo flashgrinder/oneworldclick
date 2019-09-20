@@ -6,6 +6,9 @@
 	font-weight: 700
 	display: flex
 	justify-content: space-between
+	+lg-block
+		flex-direction: column
+		align-items: center
 	&__left
 		flex-basis: 48%
 		border-bottom: 3px solid $gold
@@ -13,6 +16,12 @@
 		justify-content: flex-end
 		align-items: center
 		padding: 20px 15px 20px 10px
+		+lg-block
+			flex-basis: 100%
+			width: 100%
+			justify-content: center
+			padding: 20px 10px 20px 10px
+		+sm(flex-direction, column)
 		&-title
 			span
 				display: block
@@ -20,6 +29,8 @@
 				line-height: 19px
 				color: $gold
 				text-align: right
+				+lg(font-size, 16px)
+				+sm(text-align, center)
 		&-time
 			margin-left: 20px
 			span
@@ -27,19 +38,28 @@
 				font-size: 70px
 				line-height: 67px
 				color: $gold
+				+lg(font-size, 50px)
 	&__right
 		flex-basis: 46.7%
 		background: $gold
 		padding: 20px 0 20px 30px
 		height: auto
 		align-self: flex-start
+		+xl(flex-basis, 43.5%)
+		+lg-block
+			flex-basis: 100%
+			align-self: center
+			width: 100%
+			order: -1
+			text-align: center
+			padding: 20px 10px 20px 10px
 		&-title
 			font-size: $title-font-size
 			line-height: 30px
 			color: $white
+			+sm(font-size, 24px)
 
 .workContainer
-	// background: url(../img/bg/bglogo.svg) center center no-repeat
 	padding-top: 30px
 	padding-bottom: 30px
 .workImg
