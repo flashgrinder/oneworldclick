@@ -1,5 +1,5 @@
 .work
-	
+	background: #fff
 .workHead
 	font-family: $gotham
 	text-transform: uppercase
@@ -39,9 +39,11 @@
 			color: $white
 
 .workContainer
-	position: relative
-	background: url(../img/bg/bglogo.svg) center center no-repeat
+	// background: url(../img/bg/bglogo.svg) center center no-repeat
 	padding-top: 30px
+	padding-bottom: 30px
+.workImg
+	+md(display, none)
 .workHelper
 	+row-flex()
 	flex-direction: column

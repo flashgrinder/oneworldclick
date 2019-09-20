@@ -1166,17 +1166,17 @@ button.swiper-pagination-bullet {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 
 .reviewVideo__container {
   width: calc(25% - 30px);
-  margin: 0 16px;
+  margin: 50px 16px 0 16px;
 }
 
 .reviewVideo__container iframe {
   width: 100%;
+  height: 250px;
 }
 
 .reviewVideo__title {
@@ -1193,6 +1193,10 @@ button.swiper-pagination-bullet {
 }
 
 /* Work Block */
+
+.work {
+  background: #fff;
+}
 
 .workHead {
   font-family: "GothamPro", serif;
@@ -1258,9 +1262,8 @@ button.swiper-pagination-bullet {
 }
 
 .workContainer {
-  position: relative;
-  background: url(../img/bg/bglogo.svg) center center no-repeat;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .workHelper {
@@ -1314,6 +1317,82 @@ button.swiper-pagination-bullet {
 }
 
 /* Programm Block */
+
+.programm {
+  background: rgba(0, 0, 0, 0.1);
+  padding-bottom: 30px;
+}
+
+.programmHead {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.programmHead__wrapp {
+  -webkit-flex-basis: 53.3%;
+  flex-basis: 53.3%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  background: #CF9E41;
+  padding: 20px 30px 20px 30px;
+}
+
+.programmHead__title {
+  font-family: "GothamPro", serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+}
+
+.programmVideo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.programmVideo__container {
+  width: calc(25% - 30px);
+  margin: 50px 16px 0 16px;
+}
+
+.programmVideo__container img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.programmVideo__title {
+  font-family: Tahoma, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 10px;
+  color: #000000;
+}
+
+.programmBtn {
+  margin-top: 40px;
+  text-align: center;
+}
 
 /* Normalize */
 
@@ -1562,6 +1641,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .workImg {
+    display: none;
+  }
+
   .workHelper {
     display: block;
   }
@@ -1585,6 +1668,11 @@ body {
   .workCart {
     margin-left: 5px;
     margin-right: 5px;
+  }
+
+  .programmVideo {
+    margin-left: -5px;
+    margin-right: -5px;
   }
 
   .wrapper {
