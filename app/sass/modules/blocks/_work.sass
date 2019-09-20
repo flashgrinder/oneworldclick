@@ -1,0 +1,69 @@
+.work
+	
+.workHead
+	font-family: $gotham
+	text-transform: uppercase
+	font-weight: 700
+	display: flex
+	justify-content: space-between
+	&__left
+		flex-basis: 48%
+		border-bottom: 3px solid $gold
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding: 20px 15px 20px 10px
+		&-title
+			span
+				display: block
+				font-size: $medium-font-size
+				line-height: 19px
+				color: $gold
+				text-align: right
+		&-time
+			margin-left: 20px
+			span
+				display: block
+				font-size: 70px
+				line-height: 67px
+				color: $gold
+	&__right
+		flex-basis: 46.7%
+		background: $gold
+		padding: 20px 0 20px 30px
+		height: auto
+		align-self: flex-start
+		&-title
+			font-size: $title-font-size
+			line-height: 30px
+			color: $white
+
+.workContainer
+	position: relative
+	background: url(../img/bg/bglogo.svg) center center no-repeat
+	padding-top: 30px
+.workHelper
+	+row-flex()
+	flex-direction: column
+	justify-content: space-between
+	align-items: center
+	display: none
+	+md(display, block)
+.workCart
+	+col()
+	+size-md(12)
+	text-align: center
+	margin-top: 20px
+	&__arrow
+		margin-top: 10px
+		margin-bottom: 10px
+		img
+			height: 70px
+	&__img
+		img
+			width: auto
+			height: 100px
+	&__descr
+		font-family: $tahoma
+		font-weight: normal
+		font-size: $normal-font-size
