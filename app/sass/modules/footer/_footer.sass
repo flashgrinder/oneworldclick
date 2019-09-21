@@ -1,27 +1,37 @@
+/* Футер */
 .footer
 	background: $black
+	.headerContainer
+		+md(display, none)
 .footerContainer
 	+row-flex()
 	justify-content: center
 	align-items: flex-start
-	padding-top: 30px
-	padding-bottom: 30px
 	font-family: $tahoma
 	font-weight: normal
 	font-size: $small-font-size
 	color: $white
+	+md(font-size, $normal-font-size)
+/* Колонки в футере */
 .footerColumn
 	+col()
 	+size(3)
+	+size-md(12)
+	+md(border-bottom, 2px solid $white)
+	padding-top: 30px
+	padding-bottom: 30px
 	&__title
 		font-size: $small-font-size
 		text-transform: uppercase
 		text-decoration: underline
+		font-weight: bold
+		+md(font-size, $normal-font-size)
 	&__heading
 		font-size: $small-font-size
 		text-transform: uppercase
 		font-weight: normal
 		padding-top: 10px
+		+md(font-size, $normal-font-size)
 	a
 		display: block
 		color: $white
@@ -32,3 +42,46 @@
 			transition: ease .3s
 	&__down
 		margin-top: 50px
+/* Мобильные блоки в футере */
+.footerColumnMenu
+	font-family: $gotham
+	font-size: $normal-font-size
+	display: none
+	+md(display, block)
+	&__item
+		text-transform: uppercase
+		a
+			padding-top: 20px
+.footerColumnDown
+	display: none
+	+md-block
+		display: block
+		border-bottom: none
+	padding-top: 0
+.footerDown
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__btn
+		.btn-gold
+			margin-top: 30px
+			line-height: 15px
+	&__social
+		display: flex
+		margin-top: 20px
+		.btn-social
+			padding-top: 0
+	&__phone
+		span
+			font-family: $gotham
+			font-weight: 700
+			text-align: center
+			margin-top: 30px
+			display: block
+			color: $gold
+	&__logo
+		width: 100%
+		height: 45px
+		text-align: center
+		img
+			height: auto
