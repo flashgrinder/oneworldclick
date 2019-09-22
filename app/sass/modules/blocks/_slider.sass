@@ -2,7 +2,7 @@
 	display: flex
 	justify-content: space-between
 	font-family: $gotham
-	+lg(flex-direction, column)
+	+xl(flex-direction, column)
 .swiper
 	&-container
 		width: 100%
@@ -33,12 +33,12 @@
 		z-index: 2
 		text-align: left
 		padding: 22px 36px 55px 19px
-		+xl-block
-			width: 70%
-			padding: 15px 25px 25px 10px
+		+lg-block
+			width: 100%
 		+lg-block
 			width: 100%
 			text-align: center
+			padding: 15px 25px 15px 15px
 		.heading
 			color: $white
 			font-size: $big-font-size
@@ -62,7 +62,6 @@
 		z-index: 2
 		font-weight: 300
 		transition: right 1s
-		+xl(width, 50%)
 		ul
 			li
 				a

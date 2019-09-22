@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		autoplay: {
 			delay: 3000,
 		},
-	})
+	});
 	var mySwiper2 = new Swiper ('.slider_two', {
 		// Optional parameters
 		direction: 'horizontal',
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		autoplay: {
 			delay: 3000,
 		}
-	})
+	});
 	var mySwiper3 = new Swiper ('.slider_three', {
 		// Optional parameters
 		direction: 'horizontal',
@@ -35,5 +35,5 @@ document.addEventListener('DOMContentLoaded', function() {
 		autoplay: {
 			delay: 3000,
 		}
-	})
+	});
 });

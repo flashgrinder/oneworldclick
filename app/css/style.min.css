@@ -760,7 +760,6 @@ button.swiper-pagination-bullet {
 
 .header {
   background: #000000;
-  display: none;
 }
 
 .headerContainer {
@@ -1675,17 +1674,10 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .btn-gold_position {
-    left: 5px;
-  }
-
-  .swiper-btn {
-    width: 70%;
-    padding: 15px 25px 25px 10px;
-  }
-
-  .swiper-menu {
-    width: 50%;
+  .headerSliders {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
   }
 
   .relocationContainer {
@@ -1724,19 +1716,18 @@ body {
     margin-left: -106px;
   }
 
-  .headerSliders {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-  }
-
   .swiper-container:hover .swiper-menu {
     right: -100vw;
   }
 
   .swiper-btn {
     width: 100%;
+  }
+
+  .swiper-btn {
+    width: 100%;
     text-align: center;
+    padding: 15px 25px 15px 15px;
   }
 
   .relocationContainer {
