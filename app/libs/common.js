@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+	let burger = document.querySelector('.headerTop__burger');
+	let menu = document.querySelector('.headerMenu');
+	let link = document.querySelectorAll('.headerMenu__navigation > ul > li > a');
+
+	function showMenu(){
+		menu.classList.toggle('headerMenu_show');
+	}
+
+	burger.addEventListener('click', showMenu);
+
+	for (var i = 0; i < link.length; i++) {
+		link[i].addEventListener('click', function() {
+			menu.classList.remove('headerMenu_show');
+		});
+	}
+
 	var mySwiper1 = new Swiper ('.slider_one', {
 		// Optional parameters
 		direction: 'horizontal',
