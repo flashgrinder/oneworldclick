@@ -1212,6 +1212,7 @@ button.swiper-pagination-bullet {
 .reviewVideo__container {
   width: calc(25% - 30px);
   margin: 50px 16px 0 16px;
+  overflow: hidden;
 }
 
 .reviewVideo__container iframe {
@@ -1436,6 +1437,7 @@ button.swiper-pagination-bullet {
 .programmVideo__container {
   width: calc(25% - 30px);
   margin: 50px 16px 0 16px;
+  overflow: hidden;
 }
 
 .programmVideo__container img {
