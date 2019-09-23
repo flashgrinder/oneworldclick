@@ -1,0 +1,25 @@
+.blog
+	background: $white
+	padding-bottom: 30px
+.blogHead
+	display: flex
+	&__wrapp
+		flex-basis: 53.3%
+		display: flex
+		justify-content: flex-end
+		background: rgba(0, 0, 0, 0.5)
+		padding: 20px 30px 20px 30px
+		+xl(flex-basis, 56.4%)
+		+lg-block
+			flex-basis: 100%
+			padding: 20px 10px 20px 10px
+			justify-content: center
+	&__title
+		font-family: $gotham
+		font-weight: 700
+		font-size: $title-font-size
+		line-height: 30px
+		text-transform: uppercase
+		color: $white
+		+lg(text-align, center)
+		+sm(font-size, 24px)

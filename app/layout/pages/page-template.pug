@@ -1,0 +1,51 @@
+extends ../modules/head
+
+block variables
+	- var pageTitle = 'Название страны'
+
+block content
+	// Main Content
+	main.main
+		section.relocation(style="background-image: url(img/bg/work.jpg)")
+			.relocationContainer
+				.relocationContainer__title
+					h2 Что вы ожидаете от переезда?
+				.relocationContainer__btn
+					a(href="#").btn-gold Работа
+					a(href="#").btn-gold Образование
+					a(href="#").btn-gold Развитие бизнеса
+					a(href="#").btn-gold Подобрать программу
+					a(href="#").btn-gold Спокойное созерцание
+		// Description Block
+		include ../modules/blocks/description
+		// Programm Block
+		section.programm
+			.programmRightHead
+					.programmRightHead__title 
+						h2 Подходящие программы
+			.wrapper-fluid
+				.programmVideo
+					a(href="#").programmVideo__container
+						img(src="https://dummyimage.com/600x400/000/fff", alt="alt")
+						.programmVideo__title ВНЖ Испания
+					a(href="#").programmVideo__container
+						img(src="https://dummyimage.com/600x400/000/fff", alt="alt")
+						.programmVideo__title ВНЖ Франция
+					a(href="#").programmVideo__container
+						img(src="https://dummyimage.com/600x400/000/fff", alt="alt")
+						.programmVideo__title ВНЖ Италия
+					a(href="#").programmVideo__container
+						img(src="https://dummyimage.com/600x400/000/fff", alt="alt")
+						.programmVideo__title Гражданство Доминикана
+					a(href="#").programmVideo__container
+						img(src="https://dummyimage.com/600x400/000/fff", alt="alt")
+						.programmVideo__title Гражданство Великобритании
+					a(href="#").programmVideo__container
+						img(src="https://dummyimage.com/600x400/000/fff", alt="alt")
+						.programmVideo__title Гражданство Румынии
+			.programmBtn
+				a(href="#").btn-gold.btn-gold_clear Узнать больше
+		section.blog
+			.blogHead
+				.blogHead__wrapp
+					h2.blogHead__title Блог

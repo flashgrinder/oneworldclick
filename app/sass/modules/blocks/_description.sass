@@ -1,0 +1,35 @@
+.description
+	background: $white
+	padding-bottom: 30px
+.descriptionHead
+	display: flex
+	&__wrapp
+		flex-basis: 53.3%
+		display: flex
+		justify-content: flex-end
+		background: rgba(0, 0, 0, 0.5)
+		padding: 20px 30px 20px 30px
+		+xl(flex-basis, 56.4%)
+		+lg-block
+			flex-basis: 100%
+			padding: 20px 10px 20px 10px
+			justify-content: center
+	&__title
+		font-family: $gotham
+		font-weight: 700
+		font-size: $title-font-size
+		line-height: 30px
+		text-transform: uppercase
+		color: $white
+		+lg(text-align, center)
+		+sm(font-size, 24px)
+.descriptionContent
+	font-family: $tahoma
+	font-weight: normal
+	font-size: $base-font-size
+	line-height: 17px
+	padding-top: 15px
+	&__text
+		p
+			margin: 0
+			padding: 15px 0
