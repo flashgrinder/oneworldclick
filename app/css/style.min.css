@@ -1417,7 +1417,7 @@ button.swiper-pagination-bullet {
   color: #f6f6f6;
 }
 
-.programmVideo {
+.programmCart {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -1434,20 +1434,40 @@ button.swiper-pagination-bullet {
   margin-bottom: 30px;
 }
 
-.programmVideo__container {
+.programmCart__container {
   width: calc(25% - 30px);
   margin: 50px 16px 0 16px;
   overflow: hidden;
+  border: 2px solid transparent;
+  padding: 10px;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
 }
 
-.programmVideo__container img {
+.programmCart__container:hover img {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.programmCart__container:hover {
+  border: 2px solid #CF9E41;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.programmCart__container img {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
   object-fit: cover;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
 }
 
-.programmVideo__title {
+.programmCart__title {
   font-family: Tahoma, sans-serif;
   font-weight: normal;
   font-size: 18px;
@@ -2081,7 +2101,7 @@ body {
     flex-basis: 43.5%;
   }
 
-  .programmVideo__container {
+  .programmCart__container {
     width: calc(29.16667% - 30px);
   }
 
@@ -2324,7 +2344,7 @@ body {
     padding: 20px 10px 20px 10px;
   }
 
-  .programmVideo__container {
+  .programmCart__container {
     width: calc(41.66667% - 30px);
   }
 
@@ -2398,12 +2418,12 @@ body {
     width: calc(100% - 20px);
   }
 
-  .programmVideo {
+  .programmCart {
     margin-left: -10px;
     margin-right: -10px;
   }
 
-  .programmVideo__container {
+  .programmCart__container {
     width: calc(100% - 20px);
   }
 
@@ -2513,7 +2533,7 @@ body {
     font-size: 24px;
   }
 
-  .programmVideo__container {
+  .programmCart__container {
     width: calc(100% - 20px);
   }
 
@@ -2531,7 +2551,7 @@ body {
     width: calc(100% - 20px);
   }
 
-  .programmVideo__container {
+  .programmCart__container {
     width: calc(100% - 20px);
   }
 }
