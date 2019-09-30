@@ -866,6 +866,7 @@ button.swiper-pagination-bullet {
   color: #CF9E41;
   font-weight: bold;
   font-style: normal;
+  text-align: right;
 }
 
 .headerMenu__phone-one {
@@ -874,6 +875,28 @@ button.swiper-pagination-bullet {
 }
 
 .headerMenu__phone-two {
+  padding-left: 20px;
+}
+
+.headerMenu__pos {
+  text-align: right;
+  font-family: "GothamPro", serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #CF9E41;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.headerMenu__pos-email {
+  margin-top: 10px;
+  display: inline-block;
+  padding-right: 20px;
+  border-right: 1px solid #CF9E41;
+}
+
+.headerMenu__pos-adress {
+  margin-top: 10px;
   padding-left: 20px;
 }
 
@@ -2391,6 +2414,10 @@ body {
     padding-bottom: 10px;
   }
 
+  .headerMenu__pos {
+    text-align: center;
+  }
+
   .headerTop__burger {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2639,6 +2666,17 @@ body {
 @media screen and (max-width: 576px) {
   .headerTop__btn .btn-gold_head {
     display: none;
+  }
+
+  .headerMenu__pos-email {
+    display: block;
+    padding: 0;
+    margin: 10px 0 10px 0;
+    border-right: none;
+  }
+
+  .headerMenu__pos-adress {
+    padding-left: 0;
   }
 
   .headerMobileBtn {
