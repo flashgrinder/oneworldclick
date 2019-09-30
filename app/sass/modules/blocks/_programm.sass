@@ -1,6 +1,8 @@
 .programm
 	background: rgba(0, 0, 0, 0.1)
 	padding-bottom: 30px
+	&-white
+		background: $white
 .programmHead
 	display: flex
 	&__wrapp
@@ -81,3 +83,41 @@
 .programmBtn
 	margin-top: 40px
 	text-align: center
+// 
+.programm-pageHeader
+	height: 350px
+	display: flex
+	font-family: $gotham
+	background-image: url('../img/sliders/usa/slide-1.jpg')
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+.programm-page
+	flex-basis: 53.3%
+	height: 100%
+	background: rgba(0, 0, 0, 0.5)
+	display: flex
+	justify-content: flex-end
+	+lg-block
+		justify-content: center
+		flex-basis: 100%
+	&__wrapp
+		flex-basis: 75%
+		padding: 20px 30px 20px 30px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		+lg-block
+			flex-basis: 100%
+			text-align: center
+	&__title
+		font-size: $title-font-size
+		font-weight: 700
+		color: $white
+		line-height: 30px
+	&__descr
+		font-size: $title-font-size
+		font-weight: 300
+		color: $white
+		line-height: 30px
+		margin: 30px 0 0 0

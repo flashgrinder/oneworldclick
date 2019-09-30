@@ -16,8 +16,6 @@ module.exports = {
 	},
 	md: {
 			width: "768px",
-			offset: "20px",
-			fields: "10px"
 	},
 	sm: {
 			width: "576px"
