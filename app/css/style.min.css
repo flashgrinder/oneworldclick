@@ -1822,7 +1822,7 @@ button.swiper-pagination-bullet {
 }
 
 .postsContainerItems {
-  width: calc(75% - 30px);
+  width: calc(66.66667% - 30px);
 }
 
 .postsItems {
@@ -1949,7 +1949,7 @@ button.swiper-pagination-bullet {
 /* Сайдбар */
 
 .widget-area {
-  width: calc(25% - 30px);
+  width: calc(33.33333% - 30px);
   margin-top: 33px;
 }
 
@@ -1970,6 +1970,10 @@ button.swiper-pagination-bullet {
 .widget-area .widget li {
   margin-bottom: 20px;
   border-bottom: 1px solid transparent;
+}
+
+.widget-area .widget li:last-child {
+  margin-bottom: 0;
 }
 
 .widget-area .widget li:hover a {
@@ -2086,7 +2090,7 @@ button.swiper-pagination-bullet {
 }
 
 .postArticle {
-  width: calc(75% - 30px);
+  width: calc(66.66667% - 30px);
   font-family: Tahoma, sans-serif;
   margin-top: 33px;
   margin-right: 30px;

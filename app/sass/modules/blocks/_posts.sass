@@ -28,7 +28,7 @@
 	justify-content: space-around
 	align-items: flex-start
 .postsContainerItems
-	+size(9)
+	+size(8)
 	+size-xl(8)
 	+size-lg(8)
 	+size-md(12)
@@ -116,7 +116,7 @@
 				padding: 0 0 10px
 /* Сайдбар */
 .widget-area
-	+size(3)
+	+size(4)
 	+size-xl(4)
 	+size-lg(4)
 	+size-md(12)
@@ -135,6 +135,8 @@
 		li
 			margin-bottom: 20px
 			border-bottom: 1px solid transparent
+			&:last-child
+				margin-bottom: 0
 			&:hover a
 				color: $gold
 				transition: ease .3s
