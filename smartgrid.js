@@ -18,7 +18,8 @@ module.exports = {
 			width: "768px",
 	},
 	sm: {
-			width: "576px"
+			width: "576px",
+			fields: "15px"
 	},
 	xs: {
 			width: "400px"
