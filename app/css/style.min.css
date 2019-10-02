@@ -1617,6 +1617,14 @@ button.swiper-pagination-bullet {
 
 /* Blog Block */
 
+.blogBg {
+  background-image: url("../img/sliders/usa/slide-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 350px;
+}
+
 .blog {
   background: #f6f6f6;
   padding-bottom: 30px;
