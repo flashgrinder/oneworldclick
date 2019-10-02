@@ -1,0 +1,15 @@
+extends ../modules/head
+
+block variables
+	- var pageTitle = 'Название страны'
+
+block content
+	// Main Content
+	main.main
+		section.error404
+			.error404__img
+				img(src="img/icons/sad.svg", alt="alt")
+			p.error404__404 404
+			p.error404__heading Ошибка
+			h1.error404__title Страница не найдена
+			p.error404__text Вернуться на <a href="#">Главную</a> или <a href="#">Связаться с нами</a>
