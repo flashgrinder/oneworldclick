@@ -1517,7 +1517,7 @@ button.swiper-pagination-bullet {
   display: -webkit-flex;
   display: flex;
   font-family: "GothamPro", serif;
-  background-image: url("../img/sliders/usa/slide-1.jpg");
+  background-image: url("../img/bg/services_usa.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
