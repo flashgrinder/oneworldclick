@@ -812,6 +812,215 @@ button.swiper-pagination-bullet {
   margin: 0 30px;
 }
 
+/* Action Popup */
+
+.actionPopup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9998;
+}
+
+.actionModal {
+  font-family: Tahoma, sans-serif;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.actionModal__container {
+  position: relative;
+  min-width: 800px;
+}
+
+.actionModal__text {
+  position: absolute;
+  top: 65%;
+  right: 133px;
+}
+
+.actionModal__text p {
+  max-width: 435px;
+  font-size: 6px;
+  color: #ffffff;
+}
+
+.actionModal__text h5 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #f6f6f6;
+  margin-top: 18px;
+}
+
+.actionModal__form {
+  position: absolute;
+  right: 133px;
+  bottom: -50px;
+}
+
+.actionModal__form form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.actionModal__form form input {
+  margin-top: 19px;
+  border-radius: 500px;
+  height: 35px;
+  width: 256px;
+  border: 1px solid transparent;
+  padding-left: 14px;
+}
+
+.actionModal__form form input:last-child {
+  margin-top: 34px;
+  padding: 0;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Popaps Form */
+
+.formPopaps {
+  display: none;
+}
+
+.formPopaps_active {
+  display: block;
+}
+
+.form-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.formContainer {
+  font-family: Tahoma, sans-serif;
+  color: #f6f6f6;
+  position: absolute;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #000;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+  max-width: 700px;
+}
+
+.formContainer__wrapp {
+  padding: 15px;
+  border: 1px solid #CF9E41;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.formContainer__title {
+  font-family: Tahoma, sans-serif;
+  font-weight: 500;
+  padding: 20px;
+  background: #CF9E41;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formContainer__input {
+  width: 100%;
+  max-width: 560px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.formContainer__input:first-of-type {
+  margin-top: 20px;
+}
+
+.formContainer__input label {
+  font-size: 14px;
+  margin: 0 0 6px 0;
+  max-width: 560px;
+  display: block;
+}
+
+.formContainer__input input {
+  width: 100%;
+  max-width: 560px;
+  display: block;
+  height: 40px;
+  padding: 8px 10px;
+  border: 1px solid #000;
+}
+
+.formContainer__consent {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.formContainer__consent-text {
+  font-size: 12px;
+  text-align: center;
+}
+
+.formContainer form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.formContainer form button {
+  font-family: "GothamPro", serif;
+  font-weight: 700;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
 .headerMenu {
   font-family: "GothamPro", serif;
   font-weight: 300;
@@ -3213,6 +3422,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .actionPopup {
+    display: none;
+  }
+
   .headerMenu__phone span {
     border-right: none;
     padding: 0;

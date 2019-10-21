@@ -1,0 +1,79 @@
+.formPopaps
+	display: none
+	&_active
+		display: block
+.form-bg
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	background: rgba(0,0,0,0.5)
+	z-index: 9998
+.formContainer
+	font-family: $tahoma
+	color: $white
+	position: absolute
+	z-index: 9999
+	top: 50%
+	left: 50%
+	transform: translate(-50%,-50%)
+	padding: 15px
+	background: rgba(0,0,0,0.5)
+	border: 1px solid #000
+	box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.5)
+	max-width: 700px
+	&__wrapp
+		padding: 15px
+		border: 1px solid $gold
+		background: rgba(0,0,0,0.7)
+	&__title
+		font-family: $tahoma
+		font-weight: 500
+		padding: 20px
+		background: $gold
+		font-size: 22px
+		text-align: center
+		margin-bottom: 20px
+	&__input
+		width: 100%
+		max-width: 560px
+		display: block
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 20px
+		&:first-of-type
+			margin-top: 20px
+		label
+			font-size: 14px
+			margin: 0 0 6px 0
+			max-width: 560px
+			display: block
+		input
+			width: 100%
+			max-width: 560px
+			display: block
+			height: 40px
+			padding: 8px 10px
+			border: 1px solid #000
+	&__consent
+		max-width: 600px
+		display: flex
+		justify-content: center
+		align-items: center
+		&-text
+			font-size: 12px
+			text-align: center
+	form
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		button
+			font-family: $gotham
+			font-weight: 700
+			display: inline-block
+			text-transform: uppercase
+			margin-bottom: 30px
+			margin-top: 30px
+			cursor: pointer

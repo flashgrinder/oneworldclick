@@ -1,0 +1,16 @@
+// Popups Form
+.formPopaps
+	.form-bg
+	.formContainer
+		.formContainer__wrapp
+			h2.formContainer__title Форма обратной связи
+			form(action="send.php" method="post")
+				.formContainer__input
+					label(for="LEAD_NAME") Имя:
+					input(type="text" name="text" placeholder="Ваше имя" required)#LEAD_NAME
+				.formContainer__input
+					label(for="LEAD_PHONE") Телефон:
+					input(type="tel" name="number" placeholder="Номер телефона" required)#LEAD_PHONE
+				.formContainer__consent
+					p.formContainer__consent-text Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных
+				button(type="submit").btn-gold Отправить
