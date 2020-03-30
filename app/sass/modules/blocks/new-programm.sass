@@ -1,0 +1,394 @@
+/** Header Programm **/
+.header-programm
+	position: relative
+	min-height: 450px
+	font-family: $gotham
+	background-image: url('../img/bg/services_usa.jpg')
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+	z-index: 1
+	+md(min-height, 150px)
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		background: rgba(0, 0, 0, 0.4)
+		z-index: 1
+	&__text
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		padding-top: 80px
+		margin-bottom: 40px
+		position: relative
+		font-family: $tahoma
+		color: $white
+		z-index: 2
+		+md-block
+			padding-top: 20px
+			padding-bottom: 20px
+			margin-bottom: 0
+	&__title
+		font-size: 48px
+		line-height: 48px
+		font-weight: 400
+		background: $gold
+		padding: 10px 15px
+		margin: 0
+		+md-block
+			font-size: 24px
+			line-height: 28px
+			padding: 10px
+	&__descr
+		font-size: 24px
+		line-height: 24px
+		font-weight: 400
+		background: $gold
+		margin: 0
+		padding: 10px 15px
+		+md-block
+			font-size: 14px
+			line-height: 16px
+			padding: 10px
+/** Content Programm **/
+.content-programm
+	font-family: $tahoma
+	position: relative
+	margin-top: -200px
+	z-index: 10
+	+md(margin-top, 0)
+	.breadcrumbs
+		font-size: 16px
+		line-height: 30px
+		color: #999999
+		padding: 30px 0 0 0
+		+md(display, none)
+		a
+			color: #999999
+			font-size: 16px
+			line-height: 30px
+	#breadcrumbs
+		margin: 0
+	&__wrapp
+		padding: 0 15px
+		background: $white
+		+md(padding, 0)
+	&__title
+		font-size: 24px
+		line-height: 24px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: center
+		color: $black
+		margin-top: 60px
+		+md-block
+			font-size: 18px
+			margin-top: 20px
+/** Columns Programm **/
+.columns-programm
+	+row-flex()
+	justify-content: center
+	align-items: start
+	&__content
+		+col()
+		+size(6)
+		+size-md(12)
+		margin-top: 30px
+		padding: 25px 20px 0 20px
+		border: 1px solid #E8E8E8
+		+md-block
+			padding: 0
+			border: none
+	&__heading
+		display: inline-block
+		font-size: 18px
+		line-height: 24px
+		font-weight: 400
+		color: $white
+		padding: 5px 10px
+		margin-bottom: 15px
+		background: $black
+		+md(font-size, 16px)
+/** Cart Programm **/
+.cart-programm
+	display: flex
+	margin-bottom: 20px
+	border: 1px solid #E8E8E8
+	max-height: 170px
+	&__img
+		min-width: 165px
+		min-height: 165px
+		max-width: 165px
+		max-height: 165px
+		+md-block
+			min-width: 75px
+			max-width: 75px
+		img
+			width: 165px
+			height: 165px
+			object-fit: cover
+			+md(width, 75px)
+	&__text
+		position: relative
+		margin-left: 20px
+		+md(margin-left, 15px)
+	&__title
+		font-size: 18px
+		line-height: 24px
+		font-weight: 400
+		margin-top: 16px
+		text-transform: uppercase
+		color: $black
+	&__descr
+		font-size: 16px
+		line-height: 18px
+		font-weight: 400px
+		color: #666666
+		margin: 10px 0
+	&__more
+		position: absolute
+		bottom: 10px
+		display: block
+		font-size: 14px
+		font-weight: 400
+		line-height: 24px
+		text-transform: uppercase
+		color: $gold
+/** Description Programm **/
+.description-programm
+	font-family: $tahoma
+	font-weight: 400
+	&__content
+		margin: 30px 0 30px 0
+		padding: 0 15px
+		+md(padding, 0)
+		p
+			line-height: 24px
+/** Consult Programm **/
+.consult-programm
+	font-family: $tahoma
+	+md-block
+		background: url('../img/Clip.jpg') no-repeat
+		background-position: 32% 0
+		background-size: cover
+		min-height: 300px
+	&__banner
+		position: relative
+		width: 100%
+		min-height: 300px
+		background: url('../img/Clip.jpg') no-repeat center
+		background-size: cover
+		+md(background, none)
+	&__text
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translateY(-50%)
+		margin-right: 50px
+		+md-block
+			transform: translate(-50%, -50%)
+			margin-right: 0
+			width: 100%
+	&__title
+		font-size: 24px
+		line-height: 28px
+		font-weight: 400
+		color: $black
+		margin-bottom: 15px
+	&__descr
+		font-size: 16px
+		font-weight: 400
+		line-height: 20px
+		color: $black
+		margin: 0 0 25px 0
+	&__btn
+		+md(text-align, center)
+		.btn-gold
+			border-radius: 5px
+/** FAQ Programm **/	
+.faq-programm
+	margin-top: 50px
+	font-family: $tahoma
+	+md(margin-top, 40px)
+	&__title
+		font-size: 24px
+		line-height: 28px
+		font-weight: 400
+		color: $black
+		padding: 0 15px
+		+md-block
+			padding: 0
+			text-align: center
+.faq-accordion
+	margin: 20px 0 70px 0
+	+md(margin, 20px 0 25px 0)
+	&__item
+		border-top: 1px solid #E8E8E8
+		border-bottom: 1px solid #E8E8E8
+		padding: 18px 0px
+		&:first-child
+			border-bottom: none
+		&:last-child
+			border-top: none
+	&__title
+		font-size: 18px
+		line-height: 28px
+		font-weight: 400
+		color: $black
+		padding-left: 30px
+		outline: none
+		cursor: pointer
+		+md-block
+			display: flex
+			align-items: center
+			padding: 0
+			line-height: 24px
+		&::-webkit-details-marker
+			display: none
+		&::-moz-list-bullet
+			list-style-type: none
+		&::before
+			content: '+'
+			text-align: center
+			margin: 0px 50px auto 0
+			font-size: 22px
+			font-weight: 400
+			line-height: 28px
+			color: $black
+			+md(margin, 0px 20px 0 0)
+	&__details
+		&[open] .faq-accordion__title
+			&::before
+				content: '-'
+	&__descr
+		font-size: 16px
+		line-height: 24px
+		font-weight: 400
+		color: $black
+		padding: 0 26px
+		+md(padding, 0 28px)
+/** Support Programm **/
+.support-programm
+	font-family: $tahoma
+	position: relative
+	margin-bottom: 60px
+	+md-block
+		background: rgba(207, 158, 65, .1)
+		margin-bottom: 30px
+	&__wrapp
+		padding: 28px 20px 64px 20px
+		background: rgba(207, 158, 65, .1)
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		+md-block
+			background: none
+			padding: 28px 5px 40px 5px
+	&__title
+		font-size: 24px
+		line-height: 28px
+		font-weight: 400
+		text-transform: uppercase
+		color: $black
+		text-align: center
+	&__list
+		display: inline-block
+		margin: 70px auto 50px auto
+		counter-reset: li
+		+md(margin, 40px auto 0px auto)
+	&__item
+		position: relative
+		font-size: 18px
+		font-weight: 400
+		line-height: 28px
+		color: $black
+		margin-bottom: 40px
+		padding-left: 40px
+		+md-block
+			padding-left: 40px
+		&::before
+			content: counter(li)
+			counter-increment: li
+			position: absolute
+			top: 50%
+			left: -35px
+			transform: translateY(-50%)
+			display: block
+			line-height: 35px
+			text-align: center
+			width: 37px
+			height: 37px
+			color: $white
+			background: #CF9E41
+			border-radius: 50%
+			+md(left, -8px)
+	&__btn
+		.btn-gold
+			border-radius: 5px
+			text-transform: uppercase
+			+md-block
+				font-size: 16px
+				padding: 14px 25px
+/** Support **/
+.material-programm
+	font-family: $tahoma
+	&__title
+		font-size: 18px
+		line-height: 28px
+		font-weight: 400
+		color: $black
+		margin-bottom: 40px
+		+md-block
+			text-align: center
+			margin-bottom: 20px
+	&__content
+		padding: 0 15px
+		+md(padding, 0)
+.material-cart
+	display: flex
+	align-items: center
+	margin-bottom: 40px
+	&:last-child
+		margin-bottom: 60px
+	&__img
+		min-width: 160px
+		min-height: 160px
+		max-width: 160px
+		max-height: 160px
+		+md-block
+			min-width: 115px
+			max-width: 115px
+			min-height: 115px
+			max-height: 115px
+		img
+			width: 160px
+			height: 160px
+			object-fit: cover
+			+md-block
+				width: 115px
+				height: 115px
+	&__text
+		margin-left: 30px
+		+md(margin-left, 15px)
+	&__heading
+		font-size: 24px
+		line-height: 28px
+		font-weight: 400
+		color: $black
+		margin-bottom: 15px
+		+md-block
+			margin-bottom: 0
+			font-size: 18px
+			line-height: 24px
+	&__descr
+		font-size: 14px
+		font-weight: 400
+		line-height: 18px
+		color: $black
+		+md(display, none)

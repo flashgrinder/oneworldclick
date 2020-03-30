@@ -27,6 +27,38 @@
 		padding: 15px
 		border: 1px solid $gold
 		background: rgba(0,0,0,0.7)
+		&_nopadding
+			padding: 0
+	&__heading
+		padding: 21px 26px
+		background: $gold
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	&__text
+		&-one
+			font-family: $tahoma
+			font-size: 16px
+			line-height: 19px
+			color: $white
+			text-align: center
+			margin-bottom: 15px
+		&-two
+			font-family: $gotham
+			font-size: 26px
+			line-height: 28px
+			font-weight: 700
+			text-align: center
+			+sm(font-size, 24px)
+	&__bg
+		background: url('../img/bg/banner.jpg') no-repeat center
+		background-size: cover
+		min-height: 290px
+		clip-path: polygon(0 0, 100% 0, 100% 80%, 49% 100%, 0 80%)
+	&__btn
+		text-align: center
+		margin: 30px 0
 	&__title
 		font-family: $tahoma
 		font-weight: 500
