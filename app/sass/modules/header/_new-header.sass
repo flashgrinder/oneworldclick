@@ -1,0 +1,138 @@
+/** New Header **/
+.header
+	background: #000
+
+.header-container
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	padding: 30px 0 10px 0
+	+md-block
+		flex-direction: column
+		align-items: center
+		padding: 10px 0 20px 0
+
+.custom-logo
+	width: 235px
+	height: 50px
+
+.general-phone
+	text-decoration: none
+	color: $white
+	+md(margin-top, 25px)
+	span
+		display: block
+	&__text
+		font-size: 14px
+		line-height: 18px
+		color: #999999
+		+md(text-align, center)
+	&__number
+		font-size: 24px
+		line-height: 30px
+
+.main-phone
+	display: flex
+	flex-direction: column
+	align-items: center
+	&__link
+		text-decoration: none
+		color: $white
+		+md(display, none)
+		span
+			display: block
+	&__text
+		font-size: 14px
+		line-height: 18px
+		color: #999999
+	&__number
+		font-size: 16px
+		line-height: 19px
+	&__btn
+		margin-top: 15px
+		+md-block
+			margin-top: 25px
+			.btn-gold
+				padding: 14px 15px
+/** New Menu **/
+.header-menu
+	&__wrapp
+		position: relative
+		display: flex
+		a
+			font-family: $tahoma
+			display: block
+			font-size: 16px
+			font-weight: 400
+			line-height: 19px
+			text-transform: uppercase
+			text-decoration: none
+			color: $white
+			&:hover
+				color: $gold
+		& > .menu-item a
+			padding: 15px 18px
+		& > .menu-item
+			background: transparent
+			transition: background .3s ease
+			&:hover
+				background: #303030
+			&:hover > .header-menu__tabmenu
+				opacity: 1
+				transform: translateY(0) translateZ(0) rotateX(0)
+				transition: transform .3s, opacity .3s
+	&__tabmenu
+		display: flex
+		position: absolute
+		left: 0
+		opacity: 0
+		bottom: -100%
+		z-index: 1001
+		background: #303030
+		padding: 0 1000em
+		margin: 0 -1000em
+		transform-origin: 100% 0
+		transform: translateY(0) translateZ(0) rotateX(90deg)
+		transition: transform .3s, opacity .3s
+		& span
+			color: $gold
+			margin-left: 10px
+		& > .menu-item a
+			padding: 15px 18px
+		& > .menu-item
+			position: relative
+			border-bottom: 1px solid #303030
+			&:first-child a
+				padding-left: 18px
+			&:hover
+				border-bottom: 1px solid #767676
+			&:hover > .header-menu__tabmenu
+				opacity: 1
+				transform: translateY(0) translateZ(0) rotateX(0)
+				transition: transform .2s, opacity .2s
+			& > .header-menu__tabmenu
+				display: flex
+				flex-direction: column
+				align-items: center
+				position: absolute
+				top: auto
+				left: 0
+				right: auto
+				bottom: auto
+				width: 100%
+				margin: 1px 0 0 0
+				padding: 0
+				background: #212020
+				opacity: 0
+				transform: translateY(0) translateZ(0) rotateX(90deg)
+				transition: transform .2s, opacity .2s
+				& > .menu-item
+					border: none
+					width: 100%
+				& > .menu-item a
+					padding: 15px 18px
+					text-align: left
+					border: none
+					&:before
+						content: '—'
+						margin-right: 10px
