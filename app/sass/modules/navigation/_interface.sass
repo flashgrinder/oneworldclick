@@ -42,8 +42,66 @@
 			text-align: center
 			left: 50%
 			margin-left: -106px
+/* Навигация по Визовым услугам */
+.navBtn
+	display: flex
+	justify-content: center
+	align-items: center
+	+lg-block
+		flex-direction: column
+	.btn-gold_visa
+		margin: 10px
+		+lg-block
+			&:first-child
+				order: 1
+
 /* Социальные кнопки */
 .btn-social
 	img
 		width: 30px
 		height: 30px
+/* Таблица цен */
+.tableContent
+	font-family: $gotham
+	margin-top: 50px
+	margin-bottom: 50px
+	border: 1px solid #CF9E41
+	table
+		width: 100%
+		border-collapse: collapse
+		caption
+			margin-bottom: 10px
+			h4
+				margin: 10px 0
+				padding: 0 10px
+				font-size: 18px
+				text-align: center
+				font-weight: 700
+			span
+				display: block
+				margin: 0 auto
+				text-align: center
+				padding: 5px 10px
+				font-size: 12px
+				color: #474444
+		thead
+			background: #CF9E41
+			th
+				font-size: 18px
+				padding: 10px 0
+				color: $white
+		tbody
+			tr
+				border-bottom: 1px solid #CF9E41
+				&:last-child
+					border-bottom: none
+			td
+				text-align: center
+				padding: 10px 10px
+				color: $black
+				border-left: 1px solid #CF9E41
+				&:first-child
+					text-align: left
+					border-left: none
+				span
+					font-size: 12px
