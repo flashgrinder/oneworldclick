@@ -1,20 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 	let burger = document.querySelector('.headerTop__burger');
-	let menu = document.querySelector('.headerMenu');
-	let link = document.querySelectorAll('.headerMenu__navigation > ul > li > a');
+	let menu = document.querySelector('.header-navigation');
+	// let link = document.querySelectorAll('.headerMenu__navigation > ul > li > a');
 
 	function showMenu() {
-		menu.classList.toggle('headerMenu_show');
+		menu.classList.toggle('header-navigation_active');
 	}
 
 	burger.addEventListener('click', showMenu);
-
-	for (var i = 0; i < link.length; i++) {
-		link[i].addEventListener('click', function () {
-			menu.classList.remove('headerMenu_show');
-		});
-	}
 
 	// Popups
 	let btnServices = document.querySelector('#popaps-form');
