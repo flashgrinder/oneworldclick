@@ -3,6 +3,7 @@
 	background: #000
 
 .header-container
+	position: relative
 	display: flex
 	justify-content: space-between
 	align-items: flex-start
@@ -11,10 +12,6 @@
 		flex-direction: column
 		align-items: center
 		padding: 10px 0 20px 0
-
-.custom-logo
-	width: 235px
-	height: 50px
 
 .general-phone
 	text-decoration: none
@@ -54,11 +51,30 @@
 			margin-top: 25px
 			.btn-gold
 				padding: 14px 15px
-/** New Menu **/
+
+/** New Header Menu **/
+.header-navigation
+	position: relative
+	z-index: 1001
+	+md-block
+		position: absolute
+		right: -110vw
+		width: 100%
+		transition: ease .3s
+		transform-origin: 0% 0%
+		transform: scale(1) scaleZ(1) rotateX(-90deg) rotateY(0deg)
+		z-index: 101
+	&.header-navigation_active
+		+md-block
+			opacity: 1
+			right: 0
+			transform: scale(1) scaleZ(1) rotateX(0deg) rotateY(0deg)
+			transform-origin: 50% 0%
 .header-menu
 	&__wrapp
 		position: relative
 		display: flex
+		z-index: 101
 		a
 			font-family: $tahoma
 			display: block

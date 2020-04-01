@@ -119,25 +119,27 @@
 			margin: 0 10px
 /* Бургерменю */
 .headerTop__burger
-	+lg(display, flex)
+	position: absolute
+	right: 0
+	+md(display, flex)
 	cursor: pointer
 	height: 40px
-	width: 40px
+	width: 30px
 	display: none
 	justify-content: center
 	align-items: center
 	.line
 		display: block
 		position: relative
-		width: 40px
-		height: 2px
+		width: 30px
+		height: 4px
 		background: $gold
 		border-radius: 100px
 		&:after, &:before
 			position: absolute
 			content: ''
-			width: 40px
-			height: 2px
+			width: 30px
+			height: 4px
 			background: $gold
 			border-radius: 100px
 		&:after
