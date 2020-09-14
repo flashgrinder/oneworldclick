@@ -66,6 +66,11 @@
 	margin-top: 50px
 	margin-bottom: 50px
 	border: 1px solid #CF9E41
+	&__search
+		padding: 10px
+		width: 100%
+		max-width: 320px
+		border: 1px solid #a7a5a5
 	table
 		width: 100%
 		border-collapse: collapse
@@ -88,7 +93,7 @@
 			background: #CF9E41
 			th
 				font-size: 18px
-				padding: 10px 0
+				padding: 10px 10px
 				color: $white
 		tbody
 			tr
@@ -96,12 +101,14 @@
 				&:last-child
 					border-bottom: none
 			td
-				text-align: center
+				text-align: left
 				padding: 10px 10px
 				color: $black
 				border-left: 1px solid #CF9E41
 				&:first-child
-					text-align: left
+					text-align: center
 					border-left: none
+				&.title__table
+					font-weight: bold
 				span
 					font-size: 12px

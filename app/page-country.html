@@ -13,54 +13,128 @@
   <body>
     <!-- Popups Form-->
     <div class="formPopaps">
-      <div class="form-bg"></div>
-      <div class="formContainer">
-        <div class="formContainer__wrapp">
-          <h2 class="formContainer__title">Форма обратной связи</h2>
-          <form action="send.php" method="post">
-            <div class="formContainer__input">
-              <label for="LEAD_NAME">Имя:</label>
-              <input type="text" name="text" placeholder="Ваше имя" required id="LEAD_NAME">
-            </div>
-            <div class="formContainer__input">
-              <label for="LEAD_PHONE">Телефон:</label>
-              <input type="tel" name="number" placeholder="Номер телефона" required id="LEAD_PHONE">
-            </div>
-            <div class="formContainer__consent">
-              <p class="formContainer__consent-text">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</p>
-            </div>
-            <button class="btn-gold" type="submit">Отправить</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- Header-->
-    <header class="header">
-      <!-- Navigation-->
-      <div class="headerContainer">
-        <div class="headerTop"><a class="headerTop__logo" href="#"><img src="img/owclogo.png" alt="alt"></a>
-          <div class="headerTop__btn"><a class="btn-gold btn-gold_head" href="#">Заказать услугу</a>
-            <div class="headerTop__social"><a class="btn-social" href="#"><img src="img/icons/instagram.png" alt="alt"></a><a class="btn-social" href="#"><img src="img/icons/facebook.png" alt="alt"></a><a class="btn-social" href="#"><img src="img/icons/youtube.png" alt="alt"></a></div><a class="btn-gold btn-gold_head" href="#" id="popaps-form">Заказать консультацию</a>
-          </div>
-          <div class="headerTop__burger"><span class="line"></span></div>
-        </div>
-        <div class="headerMenu">
-          <nav class="headerMenu__navigation">
-            <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Блог</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="headerMobileBtn"><a class="btn-gold btn-gold_head" href="#">Заказать услугу</a>
-            <div class="headerMobileBtn__social"><a class="btn-social" href="#"><img src="img/icons/instagram.png" alt="alt"></a><a class="btn-social" href="#"><img src="img/icons/facebook.png" alt="alt"></a><a class="btn-social" href="#"><img src="img/icons/youtube.png" alt="alt"></a></div><a class="btn-gold btn-gold_head" href="#">Заказать консультацию</a>
-          </div>
-          <address class="headerMenu__phone"><span class="headerMenu__phone-one">+7 (906) 311-25-44</span><span class="headerMenu__phone-two">+7 (499) 450-60-20</span></address>
-        </div>
-        <div class="headerMenu__pos"><span class="headerMenu__pos-email">info@oneworldclick.ru</span><span class="headerMenu__pos-adress">Москва, Новинский б. 20а, стр. 3-6, оф. 212</span></div>
-      </div>
-    </header>
+		<div class="form-bg"></div>
+		<div class="formContainer">
+		  <div class="formContainer__wrapp">
+			<h2 class="formContainer__title">Форма обратной связи</h2>
+			<form action="send.php" method="post">
+			  <div class="formContainer__input">
+				<label for="LEAD_NAME">Имя:</label>
+				<input type="text" name="text" placeholder="Ваше имя" required id="LEAD_NAME">
+			  </div>
+			  <div class="formContainer__input">
+				<label for="LEAD_PHONE">Телефон:</label>
+				<input type="tel" name="number" placeholder="Номер телефона" required id="LEAD_PHONE">
+			  </div>
+			  <div class="formContainer__consent">
+				<p class="formContainer__consent-text">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных</p>
+			  </div>
+			  <button class="btn-gold" type="submit">Отправить</button>
+			</form>
+		  </div>
+		</div>
+	  </div>
+	<!-- Header-->
+	<header class="header">
+	<!-- Navigation-->
+		<div class="wrapper">
+			<div class="header-container">
+				<a class="custom-logo-link" href="./">
+					<img class="custom-logo" src="img/owclogo.png" alt="">
+				</a>
+				<a class="general-phone" href="tel: 8 (800) 550-54-78">
+					<span class="general-phone__text">
+						Бесплатный звонок по РФ
+					</span>
+					<span class="general-phone__number">
+						8 (800) 550-54-78
+					</span>
+				</a>
+				<div class="main-phone">
+					<a class="main-phone__link" href="tel: +7 (499) 450-60-20">
+						<span class="main-phone__text">
+							Наш телефон в Москве
+						</span>
+						<span class="main-phone__number">
+							+7 (499) 450-60-20
+						</span>
+					</a>
+					<div class="main-phone__btn">
+					<a class="btn-gold" id="popaps-form" href="#">
+						БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+					</a>
+					</div>
+				</div>
+				<div class="headerTop__burger"><span class="line"></span></div>
+			</div>
+			<div class="header-navigation">
+				<nav class="header-menu">
+					<ul class="header-menu__wrapp">
+						<li class="menu-item">
+							<a href="#">Оформление виз</a>
+							<ul class="header-menu__tabmenu">
+								<li class="menu-item">
+									<a href="#">Америка <span>5 стран</span></a>
+									<ul class="header-menu__tabmenu">
+										<li class="menu-item">
+											<a href="#">США</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">Канада</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">Мексика</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">Карибы</a>
+										</li>
+									</ul>		
+								</li>
+								<li class="menu-item">
+									<a href="#">Европа <span>23 страны</span></a>
+									<ul class="header-menu__tabmenu">
+										<li class="menu-item">
+											<a href="">Страна 2</a>
+											<ul class="header-menu__tabmenu">
+												<li class="menu-item"><a href="">Страна 3</a></li>
+												<li class="menu-item"><a href="">Страна 4</a></li>
+												<li class="menu-item"><a href="">Страна 5</a></li>
+												<li class="menu-item"><a href="">Страна 6</a></li>
+												<li class="menu-item"><a href="">Страна 7</a></li>
+											</ul>
+										</li>							
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a href="#">Азия <span>4 страны</span></a>
+									<ul class="header-menu__tabmenu">
+										<li class="menu-item">
+											<a href="#">Индия</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">Сингапур</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">Китай</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">Япония</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item">
+							<a href="#">Гражданство</a>
+						</li>
+						<li class="menu-item">
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav> 
+			</div>
+		</div>
+	</header>
     <!-- Main Content-->
     <main class="main">
       <section class="relocation" style="background-image: url(img/bg/work.jpg)">
@@ -189,133 +263,74 @@
     </main>
     <script src="js/scripts.min.js"></script>
     <!-- Footer-->
-    <footer class="footer">
-      <div class="footerMenuContainer">
-        <div class="footerTop"><a class="footerTop__logo" href="#"><img src="img/owclogo.png" alt="alt"></a>
-          <div class="footerTop__btn"><a class="btn-gold btn-gold_head" href="#">Заказать услугу</a>
-            <div class="footerTop__social"><a class="btn-social" href="#"><img src="img/icons/instagram.png" alt="alt"></a><a class="btn-social" href="#"><img src="img/icons/facebook.png" alt="alt"></a><a class="btn-social" href="#"><img src="img/icons/youtube.png" alt="alt"></a></div><a class="btn-gold btn-gold_head" href="#">Заказать консультацию</a>
-          </div>
-        </div>
-        <div class="footerMenu">
-          <nav class="footerMenu__navigation">
-            <ul>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Программы</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </nav>
-          <address class="footerMenu__phone"><span class="footerMenu__phone-one">+7 (906) 311-25-44</span><span class="footerMenu__phone-two">+7 (499) 450-60-20</span></address>
-        </div>
-      </div>
-      <div class="wrapper-fluid">
-        <div class="footerContainer">
-          <div class="footerColumn footerColumnMenu">
-            <ul class="footerColumnMenu__item">
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Услуги</a></li>
-              <li><a href="#">Программы</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
-          </div>
-          <div class="footerColumn">
-            <ul class="footerColumn__item">
-              <li>
-                <h3 class="footerColumn__title">США</h3>
-              </li>
-              <li>
-                <h3 class="footerColumn__heading">Иммиграционные визы/Грин-карты</h3>
-                <ul class="menu-down">
-                  <li><a href="#">EB-5</a></li>
-                  <li><a href="#">EB-1c</a></li>
-                  <li><a href="#">EB-2/EB-3</a></li>
-                  <li><a href="#">EB-1a</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="footerColumn__down">
-              <li>
-                <h3 class="footerColumn__heading">Неиммиграционные визы</h3>
-                <ul class="menu-down">
-                  <li><a href="#">L-1</a></li>
-                  <li><a href="#">E-2</a></li>
-                  <li><a href="#">H-1B</a></li>
-                  <li><a href="#">O-1</a></li>
-                  <li><a href="#">B1/B2</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="footerColumn">
-            <ul class="footerColumn__item">
-              <li>
-                <h3 class="footerColumn__title">Страны EC</h3>
-              </li>
-              <li>
-                <h3 class="footerColumn__heading">ВНЖ и ПМЖ</h3>
-                <ul class="menu-down">
-                  <li><a href="#">Италия</a></li>
-                  <li><a href="#">Франция</a></li>
-                  <li><a href="#">Испания</a></li>
-                  <li><a href="#">Португалия</a></li>
-                  <li><a href="#">Греция</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="footerColumn__down">
-              <li>
-                <h3 class="footerColumn__heading">Гражданство</h3>
-                <ul class="menu-down">
-                  <li><a href="#">Великобритания</a></li>
-                  <li><a href="#">Кипр</a></li>
-                  <li><a href="#">Мальта</a></li>
-                  <li><a href="#">Болгария</a></li>
-                  <li><a href="#">Польша</a></li>
-                  <li><a href="#">Румыния</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="footerColumn">
-            <ul class="footerColumn__item">
-              <li>
-                <h3 class="footerColumn__title">Карибы</h3>
-              </li>
-              <li>
-                <h3 class="footerColumn__heading">Гражданство</h3>
-                <ul class="menu-down">
-                  <li><a href="#">Антигуа и Барбуда</a></li>
-                  <li><a href="#">Гренада</a></li>
-                  <li><a href="#">Сент-Китс и Невис</a></li>
-                  <li><a href="#">Доминика</a></li>
-                  <li><a href="#">Сент-Люсия</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="footerColumn">
-            <ul class="footerColumn__item">
-              <li>
-                <h3 class="footerColumn__title">Что вы ожидаете от переезда?</h3>
-                <ul class="menu-down">
-                  <li><a href="#">Работа</a></li>
-                  <li><a href="#">Образование</a></li>
-                  <li><a href="#">Развитие бизнеса</a></li>
-                  <li><a href="#">Спокойное созерцание</a></li>
-                  <li><a href="#">Подобрать программу индивидуально</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="footerColumn footerColumnDown">
-            <div class="footerDown">
-              <div class="footerDown__btn"><a class="btn-gold btn-gold_head" href="#">Заказать услугу</a><a class="btn-gold btn-gold_head" href="#">Заказать консультацию</a></div>
-              <div class="footerDown__phone"><span class="footerDown__phone-one">+7 (906) 311-25-44</span><span class="footerDown__phone-two">+7 (499) 450-60-20</span></div>
-              <div class="footerDown__social"><a class="btn-social" href="#"><img src="img/icons/instagram.png" alt="alt"></a><a class="btn-social" href="#"><img src="img/icons/facebook.png" alt="alt"></a><a class="btn-social" href="#"><img src="img/icons/youtube.png" alt="alt"></a></div><a class="footerDown__logo" href="#"><img src="img/owclogo.png" alt="alt"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+	<footer class="footer">
+		<header class="footer-head">
+			<div class="footer-head__text">
+				<div class="footer-head__descr">
+					Больше интересных материалов  читайте в нашем инстаграм
+				</div>
+				<a class="footer-head__instagramm" href="https://www.instagram.com/oneworldclick.ru/">
+					<img class="footer-head__img" src="img/icons/insta.png" alt="instagram">
+					<span class="footer-head__site">
+						oneworldclick.ru
+					</span>
+				</a>
+			</div>
+		</header>
+		<div class="wrapper">
+			<div class="footer-container">
+				<a class="symbol-link" href="https://oneworldclick.ru/">
+					<span>© 2020 OneWorldClick.ru</span>
+				</a>
+				<div class="footer-menu">
+					<nav class="footer-menu__nav">
+						<ul class="footer-menu__wrapp">
+							<li class="menu-item">
+								<a href="#">Блог</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Прайс</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer-politics">
+						<a class="footer-politics__link" href="#">
+							&#8212; Политика конфиденциальности
+						</a>
+						<a class="footer-politics__link" href="#">
+							&#8212; Пользовательское соглашение
+						</a>
+					</div>
+				</div>
+				<div class="footer-contacts">
+					<div class="footer-social">
+						<div class="footer-social__title">
+							Следите за нами в соцсетях:
+						</div>
+						<a href="https://www.instagram.com/oneworldclick.ru/" class="footer-social__link" target="_blank">
+							<img src="img/icons/instagram.png" alt="instagram" class="footer-social__img">
+						</a>
+						<a href="https://www.facebook.com/oneworldclick/" class="footer-social__link" target="_blank">
+							<img src="img/icons/facebook.png" alt="facebook" class="footer-social__img">
+						</a>
+						<a href="https://vk.com/oneworldclick" class="footer-social__link" target="_blank">
+							<img src="img/icons/vk.png" alt="youtube" class="footer-social__img">
+						</a>
+					</div>
+					<a class="footer-phone" href="#">
+						<div class="footer-phone__title">
+							Бесплатный звонок по РФ
+						</div>
+						<div class="footer-phone__number">
+							8 (800) 550-54-78
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
   </body>
 </html>

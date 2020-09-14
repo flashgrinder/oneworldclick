@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	let burger = document.querySelector('.headerTop__burger');
 	let menu = document.querySelector('.header-navigation');
-	// let link = document.querySelectorAll('.headerMenu__navigation > ul > li > a');
 
 	function showMenu() {
 		menu.classList.toggle('header-navigation_active');
@@ -17,15 +16,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	function showModal() {
 		modal.classList.add('formPopaps_active');
-		formContainer.classList.add('form-bg_active')
 	}
 	function hideModal() {
 		modal.classList.remove('formPopaps_active');
-		formContainer.classList.remove('form-bg_active')
 	}
 
-	btnServices.addEventListener('click', showModal);
-	formBg.addEventListener('click', hideModal)
+	if(btnServices){
+		btnServices.addEventListener('click', showModal);
+		formBg.addEventListener('click', hideModal);
+	}
+	
 
 	// Sliders
 	var mySwiper1 = new Swiper('.slider_one', {
@@ -64,4 +64,11 @@ document.addEventListener('DOMContentLoaded', function () {
 			delay: 3000,
 		}
 	});
+
+	$(".tabs-content__block").not(":first").hide();
+	$(".tabs-nav .tabs-nav__item").click(function() {
+		$(".tabs-nav .tabs-nav__item").removeClass("is-active").eq($(this).index()).addClass("is-active");
+		$(".tabs-content__block").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("is-active");
+
 });

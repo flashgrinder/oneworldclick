@@ -1,0 +1,89 @@
+/** New Single Programm Page **/
+.content
+	&_bg
+		&_dark
+			background: #1F1F1F
+	&_padding
+		&_bottom
+			padding-bottom: 60px
+	&_padding
+		&_top
+			padding-top: 30px
+	&__header
+		margin: 0px 0px 30px 0px
+	&__descr
+		margin: 0 0 25px 0
+	&__list
+		&-heading
+			position: relative
+			font-family: $tahoma
+			font-style: normal
+			font-weight: 700
+			font-size: 22px
+			color: $gold
+			margin-bottom: 30px
+			padding-left: 40px
+			&:last-child
+				margin-bottom: 0
+			&::before
+				content: '✓'
+				position: absolute
+				left: 0
+				top: 0
+				display: inline-block
+				height: 20px
+				width: 20px
+				padding: 2px
+				text-align: center
+				background: $gold
+				color: $white
+				margin-right: 12px
+.tabs
+	&-nav
+		display: flex
+		justify-content: center
+		+md(flex-direction, column)
+		&__item
+			font-family: $tahoma
+			font-style: normal
+			font-weight: normal
+			font-size: 20px
+			text-align: center
+			border: 1px solid #E5E5E5
+			border-bottom: none
+			padding: 5px 10px
+			cursor: pointer
+	&-content
+		border: 1px solid #E5E5E5
+		padding: 24px 20px
+		&__block
+			+row-flex()
+			justify-content: space-between
+		&__text
+			+col()
+			+size(6)
+			+size-md(12)
+			p
+				margin: 0 0 25px 0
+				&:last-child
+					margin: 0
+					+md(margin-bottom, 25px)
+		&__image
+			+col()
+			+size(6)
+			+size-md(12)
+			img
+				display: block
+				text-align: center
+				margin: 0 auto
+				width: 100%
+.scheme
+	&-content
+		&__image
+			margin-bottom: 30px
+			img
+				display: block
+				margin: 0 auto
+				object-fit: contain
+		&__btn
+			text-align: center
