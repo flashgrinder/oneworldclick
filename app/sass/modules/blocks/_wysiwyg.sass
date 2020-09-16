@@ -1,0 +1,48 @@
+.programm-content
+	&__text
+		& h1, h2, h3, h4, h5, h6
+			margin: 20px 0 0 0
+			color: #2D3142
+			line-height: 30px
+		& p
+			margin: 15px 0
+			color: #2D3142
+			line-height: 30px
+		& ul
+			+xs(padding-left, 0)
+			padding-left: 20px
+    		margin: 15px 0
+			color: #2D3142
+			li
+				position: relative
+				list-style: none
+				line-height: 30px
+				padding-left: 40px
+				margin-top: 16px
+				&::before
+					content: '✓'
+					position: absolute
+					left: 0
+					top: 3px
+					display: inline-flex
+					justify-content: center
+					align-items: center
+					height: 20px
+					width: 20px
+					padding: 2px
+					text-align: center
+					background: #CF9E41
+					color: #f6f6f6
+					margin-right: 12px
+		.wp-block-column
+			padding: 10px;
+			h1, h2, h3, h4, h5, h6
+				&:first-child
+					padding-bottom: 10px
+					border-bottom: 1px solid #b5b3b3
+		.wp-block-column
+			&:not(:first-child)
+				margin-left: 20px
+			&:nth-child(2n)
+    			background: rgba(0,0,0, 0.07)
+				

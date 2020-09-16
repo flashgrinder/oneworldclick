@@ -65,6 +65,63 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
+	var stepSlider = new Swiper('.step-slider__swiper', {
+		// Optional parameters
+		direction: 'horizontal',
+		// loop: true,
+		speed: 300,
+		effect: 'slide',
+		slidesPerView: 4,
+		slidesPerGroup: 1,
+		spaceBetween: 30,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: '.step-slider__next_step',
+			prevEl: '.step-slider__prev_step',
+		},
+		breakpoints: {
+			1200: {
+				slidesPerView: 3
+			},
+			1024: {
+				slidesPerView: 2
+			},
+			768: {
+				slidesPerView: 2
+			},
+			576: {
+				slidesPerView: 1
+			}
+		}
+	});
+
+	var projecktSlider = new Swiper('.step-slider__swiper_projeckt', {
+		// Optional parameters
+		direction: 'horizontal',
+		speed: 300,
+		effect: 'slide',
+		slidesPerView: 3,
+		slidesPerGroup: 1,
+		spaceBetween: 30,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: '.step-slider__next_projeckt',
+			prevEl: '.step-slider__prev_projeckt',
+		},
+		breakpoints: {
+			1024: {
+				slidesPerView: 2
+			},
+			768: {
+				slidesPerView: 2
+			},
+			576: {
+				slidesPerView: 1
+			}
+		}
+	});
+
+
 	$(".tabs-content__block").not(":first").hide();
 	$(".tabs-nav .tabs-nav__item").click(function() {
 		$(".tabs-nav .tabs-nav__item").removeClass("is-active").eq($(this).index()).addClass("is-active");

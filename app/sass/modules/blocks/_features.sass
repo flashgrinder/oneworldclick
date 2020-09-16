@@ -1,0 +1,65 @@
+.features
+	padding: 30px 0
+	&__heading
+		margin-bottom: 30px
+	&__grid
+		display: flex
+		flex-direction: column
+	&__cart
+		display: flex
+		font-family: $tahoma
+		margin-bottom: 30px
+		color: #2D3142
+	&__img
+		+lg(display, none)
+		min-width: 150px
+		width: 150px
+		height: 250px
+		padding: 20px
+		background: $gold
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		margin-right: 30px
+	&__pic
+		width: 100px
+		height: 100px
+	&__title
+		font-size: 24px
+		line-height: 28px
+		font-weight: 400
+		margin-bottom: 20px
+		text-transform: uppercase
+	&__cart
+		& p
+			font-size: 14px
+			margin: 15px 0
+			color: #2D3142
+			line-height: 30px
+		ul
+			+xs(padding-left, 0)
+			font-size: 14px
+			padding-left: 20px
+    		margin: 15px 0
+			color: #2D3142
+			li
+				position: relative
+				list-style: none
+				line-height: 28px
+				padding-left: 40px
+				margin-top: 10px
+				&::before
+					content: '✓'
+					position: absolute
+					left: 0
+					top: 3px
+					display: inline-flex
+					justify-content: center
+					align-items: center
+					height: 20px
+					width: 20px
+					padding: 2px
+					text-align: center
+					background: #CF9E41
+					color: #f6f6f6
+					margin-right: 12px
