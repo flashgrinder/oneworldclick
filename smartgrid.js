@@ -8,6 +8,9 @@ module.exports = {
 		fields: "30px"
 	},
 	breakPoints: {
+	xls: {
+			width: '1365px'
+	},
 	xl: {
 			width: '1200px'
 	},

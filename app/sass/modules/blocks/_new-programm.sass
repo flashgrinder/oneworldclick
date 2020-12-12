@@ -97,7 +97,7 @@
 	&__content
 		+col()
 		+size(6)
-		+size-md(12)
+		+size-lg(12)
 		margin-top: 30px
 		padding: 25px 20px 0 20px
 		border: 1px solid #E8E8E8
@@ -119,18 +119,18 @@
 	display: flex
 	margin-bottom: 20px
 	border: 1px solid #E8E8E8
-	max-height: 170px
+	max-height: 200px
 	&__img
 		min-width: 165px
-		min-height: 165px
+		min-height: 200px
 		max-width: 165px
-		max-height: 165px
+		max-height: 200px
 		+md-block
 			min-width: 75px
 			max-width: 75px
 		img
-			width: 165px
-			height: 165px
+			width: 200px
+			height: 200px
 			object-fit: cover
 			+md(width, 75px)
 	&__text
@@ -144,12 +144,19 @@
 		margin-top: 16px
 		text-transform: uppercase
 		color: $black
+		+md(font-size, 16px)
+	&__link
+		text-decoration: none
+		color: #000
+		&:hover
+			color: $gold
 	&__descr
 		font-size: 16px
 		line-height: 18px
 		font-weight: 400px
 		color: #666666
 		margin: 10px 0
+		+xs(font-size, 14px)
 	&__more
 		position: absolute
 		bottom: 10px
@@ -173,28 +180,22 @@
 .consult-programm
 	padding: 30px 0
 	font-family: $tahoma
-	+md-block
-		background: url('../img/Clip.jpg') no-repeat
-		background-position: 32% 0
-		background-size: cover
-		min-height: 300px
 	&__banner
 		position: relative
 		width: 100%
 		min-height: 300px
 		background: url('../img/Clip.jpg') no-repeat center
 		background-size: cover
-		+md(background, none)
-	&__text
-		position: absolute
-		top: 50%
-		left: 50%
-		transform: translateY(-50%)
-		margin-right: 50px
+		display: flex
+		justify-content: flex-end
 		+md-block
-			transform: translate(-50%, -50%)
-			margin-right: 0
+			background-position: 32% 0
+	&__text
+		max-width: 600px
+		padding: 30px
+		+md-block
 			width: 100%
+			+xs(padding, 20px 10px)
 	&__title
 		font-size: 24px
 		line-height: 28px
@@ -311,12 +312,11 @@
 .support-programm
 	font-family: $tahoma
 	position: relative
-	margin-bottom: 60px
+	padding: 30px 0
 	+md-block
 		background: rgba(207, 158, 65, .1)
-		margin-bottom: 30px
 	&__wrapp
-		padding: 28px 20px 64px 20px
+		padding: 28px 60px 64px 60px
 		background: rgba(207, 158, 65, .1)
 		display: flex
 		flex-direction: column
@@ -332,11 +332,20 @@
 		text-transform: uppercase
 		color: $black
 		text-align: center
+		+xls(font-size, 20px)
+		+md(font-size, 18px)
+	&__text
+		font-size: 18px
+		line-height: 28px
+		margin-top: 30px
+		+xls(font-size, 16px)
+		+md-block
+			font-size: 14px
 	&__list
 		display: inline-block
-		margin: 70px auto 50px auto
+		margin: 30px auto 0 auto
 		counter-reset: li
-		+md(margin, 40px auto 0px auto)
+		+md(margin, 20px auto 0 auto)
 	&__item
 		position: relative
 		font-size: 18px
@@ -345,14 +354,16 @@
 		color: $black
 		margin-bottom: 40px
 		padding-left: 40px
+		+xls(font-size, 16px)
 		+md-block
+			font-size: 14px
 			padding-left: 40px
 		&::before
 			content: counter(li)
 			counter-increment: li
 			position: absolute
 			top: 50%
-			left: -35px
+			left: -20px
 			transform: translateY(-50%)
 			display: block
 			line-height: 35px
@@ -364,6 +375,7 @@
 			border-radius: 50%
 			+md(left, -8px)
 	&__btn
+		margin-top: 40px
 		.btn-gold
 			border-radius: 5px
 			text-transform: uppercase
@@ -427,3 +439,13 @@
 		line-height: 18px
 		color: $black
 		+md(display, none)
+/** Img-service **/
+.img-service
+	&__wrapp
+		overflow: hidden
+	&__pict
+		display: block
+		width: 100%
+		height: auto
+		max-height: 500px
+		object-fit: cover

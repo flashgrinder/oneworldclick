@@ -1,9 +1,14 @@
-giy.programm-content
+.programm-content
 	&__text
 		& h1, h2, h3, h4, h5, h6
 			margin: 20px 0 0 0
 			color: #2D3142
 			line-height: 30px
+			& > a
+				text-decoration: none
+				color: #2d3142
+				&:hover
+					color: #CF9E41
 		& p
 			margin: 15px 0
 			color: #2D3142
@@ -37,9 +42,9 @@ giy.programm-content
 		.wp-block-column
 			padding: 10px;
 			h1, h2, h3, h4, h5, h6
-				&:first-child
-					padding-bottom: 10px
-					border-bottom: 1px solid #b5b3b3
+				// &:first-child
+				padding-bottom: 10px
+				border-bottom: 1px solid #b5b3b3
 		.wp-block-column
 			&:not(:first-child)
 				margin-left: 20px
