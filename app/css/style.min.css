@@ -4063,22 +4063,22 @@ button.swiper-pagination-bullet {
   line-height: 30px;
 }
 
-.programm-content__text h1 > a,
-.programm-content__text h2 > a,
-.programm-content__text h3 > a,
-.programm-content__text h4 > a,
-.programm-content__text h5 > a,
-.programm-content__text h6 > a {
+.programm-content__text h1 a,
+.programm-content__text h2 a,
+.programm-content__text h3 a,
+.programm-content__text h4 a,
+.programm-content__text h5 a,
+.programm-content__text h6 a {
   text-decoration: none;
   color: #2d3142;
 }
 
-.programm-content__text h1 > a:hover,
-.programm-content__text h2 > a:hover,
-.programm-content__text h3 > a:hover,
-.programm-content__text h4 > a:hover,
-.programm-content__text h5 > a:hover,
-.programm-content__text h6 > a:hover {
+.programm-content__text h1 a:hover,
+.programm-content__text h2 a:hover,
+.programm-content__text h3 a:hover,
+.programm-content__text h4 a:hover,
+.programm-content__text h5 a:hover,
+.programm-content__text h6 a:hover {
   color: #CF9E41;
 }
 
